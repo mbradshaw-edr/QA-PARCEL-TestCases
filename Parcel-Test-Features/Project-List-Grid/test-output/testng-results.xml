@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1174840" started-at="2017-01-11T09:18:27Z" finished-at="2017-01-11T09:38:02Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1174840" started-at="2017-01-11T09:18:27Z" finished-at="2017-01-11T09:38:02Z">
+      <class name="project_List_Grid_Feature.Main_Grid">
+        <test-method status="PASS" signature="login()[pri:1, instance:project_List_Grid_Feature.Main_Grid@759d26fb]" name="login" duration-ms="23534" started-at="2017-01-11T14:48:27Z" finished-at="2017-01-11T14:48:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="allreports_list()[pri:2, instance:project_List_Grid_Feature.Main_Grid@759d26fb]" name="allreports_list" duration-ms="8735" started-at="2017-01-11T14:48:51Z" finished-at="2017-01-11T14:48:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allreports_list -->
+        <test-method status="PASS" signature="Check_Page_Headers()[pri:14, instance:project_List_Grid_Feature.Main_Grid@759d26fb]" name="Check_Page_Headers" duration-ms="619528" started-at="2017-01-11T14:48:59Z" finished-at="2017-01-11T14:59:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_Page_Headers -->
+        <test-method status="PASS" signature="Check_Start_Menus()[pri:15, instance:project_List_Grid_Feature.Main_Grid@759d26fb]" name="Check_Start_Menus" duration-ms="76406" started-at="2017-01-11T14:59:19Z" finished-at="2017-01-11T15:00:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_Start_Menus -->
+        <test-method status="PASS" signature="Check_Other_Menus()[pri:16, instance:project_List_Grid_Feature.Main_Grid@759d26fb]" name="Check_Other_Menus" duration-ms="331326" started-at="2017-01-11T15:00:35Z" finished-at="2017-01-11T15:06:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_Other_Menus -->
+        <test-method status="PASS" signature="Check_Support_Help_Button()[pri:17, instance:project_List_Grid_Feature.Main_Grid@759d26fb]" name="Check_Support_Help_Button" duration-ms="115251" started-at="2017-01-11T15:06:07Z" finished-at="2017-01-11T15:08:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_Support_Help_Button -->
+      </class> <!-- project_List_Grid_Feature.Main_Grid -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
