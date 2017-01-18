@@ -1,0 +1,174 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>19/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jan 11 15:24:46 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>2092 seconds (2092789 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='appendices.Main_Appendices.Add_ADA_Checklist()'><b>Add_ADA_Checklist</b><br>Test class: appendices.Main_Appendices</td>
+<td></td>
+<td>290</td>
+<td>appendices.Main_Appendices@14555e0a</td></tr>
+<tr>
+<td title='appendices.Main_Appendices.Add_Comment()'><b>Add_Comment</b><br>Test class: appendices.Main_Appendices</td>
+<td></td>
+<td>167</td>
+<td>appendices.Main_Appendices@14555e0a</td></tr>
+<tr>
+<td title='appendices.Main_Appendices.Add_Communication_Record()'><b>Add_Communication_Record</b><br>Test class: appendices.Main_Appendices</td>
+<td></td>
+<td>71</td>
+<td>appendices.Main_Appendices@14555e0a</td></tr>
+<tr>
+<td title='appendices.Main_Appendices.Add_FHA_Checklist()'><b>Add_FHA_Checklist</b><br>Test class: appendices.Main_Appendices</td>
+<td></td>
+<td>154</td>
+<td>appendices.Main_Appendices@14555e0a</td></tr>
+<tr>
+<td title='appendices.Main_Appendices.Add_Image()'><b>Add_Image</b><br>Test class: appendices.Main_Appendices</td>
+<td></td>
+<td>91</td>
+<td>appendices.Main_Appendices@14555e0a</td></tr>
+<tr>
+<td title='appendices.Main_Appendices.Add_User_Questionnaire()'><b>Add_User_Questionnaire</b><br>Test class: appendices.Main_Appendices</td>
+<td></td>
+<td>153</td>
+<td>appendices.Main_Appendices@14555e0a</td></tr>
+<tr>
+<td title='appendices.Main_Appendices.Check_Appendices_Tab()'><b>Check_Appendices_Tab</b><br>Test class: appendices.Main_Appendices</td>
+<td></td>
+<td>189</td>
+<td>appendices.Main_Appendices@14555e0a</td></tr>
+<tr>
+<td title='appendices.Main_Appendices.Check_Checkboxes_Functionality()'><b>Check_Checkboxes_Functionality</b><br>Test class: appendices.Main_Appendices</td>
+<td></td>
+<td>139</td>
+<td>appendices.Main_Appendices@14555e0a</td></tr>
+<tr>
+<td title='appendices.Main_Appendices.Check_Comments_Subtab()'><b>Check_Comments_Subtab</b><br>Test class: appendices.Main_Appendices</td>
+<td></td>
+<td>52</td>
+<td>appendices.Main_Appendices@14555e0a</td></tr>
+<tr>
+<td title='appendices.Main_Appendices.Check_PDF_Exclude_Include_Sort_Delete()'><b>Check_PDF_Exclude_Include_Sort_Delete</b><br>Test class: appendices.Main_Appendices</td>
+<td></td>
+<td>95</td>
+<td>appendices.Main_Appendices@14555e0a</td></tr>
+<tr>
+<td title='appendices.Main_Appendices.Check_Section_Dropdown()'><b>Check_Section_Dropdown</b><br>Test class: appendices.Main_Appendices</td>
+<td></td>
+<td>92</td>
+<td>appendices.Main_Appendices@14555e0a</td></tr>
+<tr>
+<td title='appendices.Main_Appendices.Check_Upload_PDF()'><b>Check_Upload_PDF</b><br>Test class: appendices.Main_Appendices</td>
+<td></td>
+<td>181</td>
+<td>appendices.Main_Appendices@14555e0a</td></tr>
+<tr>
+<td title='appendices.Main_Appendices.Drag_And_Drop_Image()'><b>Drag_And_Drop_Image</b><br>Test class: appendices.Main_Appendices</td>
+<td></td>
+<td>27</td>
+<td>appendices.Main_Appendices@14555e0a</td></tr>
+<tr>
+<td title='appendices.Main_Appendices.Edit_All_Option()'><b>Edit_All_Option</b><br>Test class: appendices.Main_Appendices</td>
+<td></td>
+<td>98</td>
+<td>appendices.Main_Appendices@14555e0a</td></tr>
+<tr>
+<td title='appendices.Main_Appendices.Include_Exclude_Zoom_Delete_Options()'><b>Include_Exclude_Zoom_Delete_Options</b><br>Test class: appendices.Main_Appendices</td>
+<td></td>
+<td>51</td>
+<td>appendices.Main_Appendices@14555e0a</td></tr>
+<tr>
+<td title='appendices.Main_Appendices.Refresh_OpenAll_CloseAll_Delete_Functionality()'><b>Refresh_OpenAll_CloseAll_Delete_Functionality</b><br>Test class: appendices.Main_Appendices</td>
+<td></td>
+<td>80</td>
+<td>appendices.Main_Appendices@14555e0a</td></tr>
+<tr>
+<td title='appendices.Main_Appendices.Send_Questionnaire_Email()'><b>Send_Questionnaire_Email</b><br>Test class: appendices.Main_Appendices</td>
+<td></td>
+<td>65</td>
+<td>appendices.Main_Appendices@14555e0a</td></tr>
+<tr>
+<td title='appendices.Main_Appendices.View_Image()'><b>View_Image</b><br>Test class: appendices.Main_Appendices</td>
+<td></td>
+<td>64</td>
+<td>appendices.Main_Appendices@14555e0a</td></tr>
+<tr>
+<td title='appendices.Main_Appendices.login()'><b>login</b><br>Test class: appendices.Main_Appendices</td>
+<td></td>
+<td>24</td>
+<td>appendices.Main_Appendices@14555e0a</td></tr>
+</table><p>
+</body>
+</html>
