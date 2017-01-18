@@ -12,12 +12,12 @@ static WebDriver driver;
 		
 		
 		if(browsername.equalsIgnoreCase("chrome")){			
-			System.setProperty("webdriver.chrome.driver", "D:\\selenium practice\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "src\\Browser Drivers\\chromedriver.exe");
 			driver= new ChromeDriver();
 		}
 		
 	if(browsername.equalsIgnoreCase("IE")){
-		System.setProperty("webdriver.ie.driver","D:\\selenium practice\\IEDriverServer\\IEDriverServer.exe");				
+		System.setProperty("webdriver.ie.driver","src\\Browser Drivers\\IEDriverServer.exe");				
 		driver = new InternetExplorerDriver();	
 		}
 	
