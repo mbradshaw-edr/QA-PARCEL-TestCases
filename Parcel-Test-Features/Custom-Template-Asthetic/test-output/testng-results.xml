@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="869361" started-at="2017-01-18T09:37:51Z" finished-at="2017-01-18T09:52:20Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="869361" started-at="2017-01-18T09:37:51Z" finished-at="2017-01-18T09:52:20Z">
+      <class name="main_file.Main_Templates">
+        <test-method status="PASS" signature="login()[pri:1, instance:main_file.Main_Templates@ea6147e]" name="login" duration-ms="23582" started-at="2017-01-18T15:07:51Z" finished-at="2017-01-18T15:08:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="Copy_Template_Into_New_Template_With_Different_Name()[pri:2, instance:main_file.Main_Templates@ea6147e]" name="Copy_Template_Into_New_Template_With_Different_Name" duration-ms="85412" started-at="2017-01-18T15:08:15Z" finished-at="2017-01-18T15:09:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Copy_Template_Into_New_Template_With_Different_Name -->
+        <test-method status="PASS" signature="Edit_And_Save_All_Setup_Options_For_Template()[pri:3, instance:main_file.Main_Templates@ea6147e]" name="Edit_And_Save_All_Setup_Options_For_Template" duration-ms="197111" started-at="2017-01-18T15:09:40Z" finished-at="2017-01-18T15:12:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Edit_And_Save_All_Setup_Options_For_Template -->
+        <test-method status="PASS" signature="Make_Default_And_Rename_Template()[pri:4, instance:main_file.Main_Templates@ea6147e]" name="Make_Default_And_Rename_Template" duration-ms="67580" started-at="2017-01-18T15:12:57Z" finished-at="2017-01-18T15:14:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Make_Default_And_Rename_Template -->
+        <test-method status="PASS" signature="Shortname_Template()[pri:5, instance:main_file.Main_Templates@ea6147e]" name="Shortname_Template" duration-ms="150158" started-at="2017-01-18T15:14:05Z" finished-at="2017-01-18T15:16:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Shortname_Template -->
+        <test-method status="PASS" signature="View_Report_Section_Structure_And_Define_Rules()[pri:6, instance:main_file.Main_Templates@ea6147e]" name="View_Report_Section_Structure_And_Define_Rules" duration-ms="57370" started-at="2017-01-18T15:16:35Z" finished-at="2017-01-18T15:17:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- View_Report_Section_Structure_And_Define_Rules -->
+        <test-method status="PASS" signature="Define_Dashboard()[pri:7, instance:main_file.Main_Templates@ea6147e]" name="Define_Dashboard" duration-ms="64874" started-at="2017-01-18T15:17:32Z" finished-at="2017-01-18T15:18:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Define_Dashboard -->
+        <test-method status="PASS" signature="Move_Template_ToAnotherCompany_And_Delete_Template()[pri:8, instance:main_file.Main_Templates@ea6147e]" name="Move_Template_ToAnotherCompany_And_Delete_Template" duration-ms="206426" started-at="2017-01-18T15:18:37Z" finished-at="2017-01-18T15:22:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Move_Template_ToAnotherCompany_And_Delete_Template -->
+        <test-method status="PASS" signature="LogOut()[pri:9, instance:main_file.Main_Templates@ea6147e]" name="LogOut" duration-ms="16775" started-at="2017-01-18T15:22:03Z" finished-at="2017-01-18T15:22:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOut -->
+      </class> <!-- main_file.Main_Templates -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
