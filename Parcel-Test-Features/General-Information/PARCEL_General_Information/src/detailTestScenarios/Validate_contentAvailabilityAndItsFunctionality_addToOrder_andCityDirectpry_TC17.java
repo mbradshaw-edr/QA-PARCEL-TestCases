@@ -30,7 +30,7 @@ public class Validate_contentAvailabilityAndItsFunctionality_addToOrder_andCityD
 	public static String SubParentWndow;
 	public static String SubParent1Wndow;
 	public static Set<String> s;
-	ExcelR1 obj=new ExcelR1("C:\\Users\\Admin\\workspace\\PARCEL_General_Information\\src\\testData\\General Information Test Data.xlsx");
+	ExcelR1 obj=new ExcelR1("..\\PARCEL_General_Information\\src\\testData\\General Information Test Data.xlsx");
 	  public static void HighlightElement(WebDriver wd, WebElement element) throws InterruptedException
 	    {
 	           JavascriptExecutor jse=(JavascriptExecutor)wd;

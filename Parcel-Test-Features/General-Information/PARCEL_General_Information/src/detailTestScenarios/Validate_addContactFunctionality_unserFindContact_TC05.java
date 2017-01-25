@@ -35,7 +35,7 @@ public class Validate_addContactFunctionality_unserFindContact_TC05 {
 	public static Set<String> s2;
 	public static Set<String> s3;
 	public String parent1Window;
-	ExcelR1 obj=new ExcelR1("C:\\Users\\Admin\\workspace\\PARCEL_General_Information\\src\\testData\\General Information Test Data.xlsx");
+	ExcelR1 obj=new ExcelR1("..\\PARCEL_General_Information\\src\\testData\\General Information Test Data.xlsx");
 	  public static void HighlightElement(WebDriver wd, WebElement element) throws InterruptedException
 	    {
 	           JavascriptExecutor jse=(JavascriptExecutor)wd;

@@ -58,17 +58,17 @@ public static WebDriver wd;
 		String brows=sc.next();
 		if(brows.equalsIgnoreCase("chrome"))
 		{
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\workspace\\PARCEL_General_Information\\src\\browserDrivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "..\\PARCEL_General_Information\\src\\browserDrivers\\chromedriver.exe");
 		wd=new ChromeDriver();
 		}
 		else if(brows.equalsIgnoreCase("ie"))
 		{
-			System.setProperty("webdriver.ie.driver", "C:\\Users\\Admin\\workspace\\PARCEL_General_Information\\src\\browserDrivers\\IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", "..\\PARCEL_General_Information\\src\\browserDrivers\\IEDriverServer.exe");
 			wd=new InternetExplorerDriver();
 		}
 		else if(brows.equalsIgnoreCase("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Admin\\workspace\\PARCEL_General_Information\\src\\browserDrivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "..\\PARCEL_General_Information\\src\\browserDrivers\\geckodriver.exe");
 			wd=new FirefoxDriver();
 		}
 		wd.get("https://www.parcelplatform.com");
