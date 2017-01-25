@@ -61,7 +61,7 @@ public class Validation_otherLinks2_ouseHovering_functionality_underProjectDashb
 	public Login m1=new Login(wd);
 	//public Login m2=new Login(wd);
 	
-	ExcelR1 obj=new ExcelR1("C:\\Users\\Admin\\workspace\\PARCEL_projectDashboard\\src\\testData\\TestData1.xlsx");
+	ExcelR1 obj=new ExcelR1("..\\PARCEL_projectDashboard\\src\\testData\\TestData1.xlsx");
 	
     public static void HighlightElement(WebDriver wd, WebElement element) throws InterruptedException
     {
@@ -120,7 +120,7 @@ public class Validation_otherLinks2_ouseHovering_functionality_underProjectDashb
              System.out.println(handle1);
              wd.switchTo().window(handle1);
 	          }
-            Thread.sleep(3000);
+            Thread.sleep(5000);
             wd.close();
             Thread.sleep(2000);
             
@@ -161,7 +161,7 @@ public class Validation_otherLinks2_ouseHovering_functionality_underProjectDashb
          System.out.println(handle1);
          wd.switchTo().window(handle1);
          }
-        
+        Thread.sleep(6000);
         WebElement e1=wd.findElement(ToTextBox);
 		HighlightElement(wd, e1);
 		e1.click();
