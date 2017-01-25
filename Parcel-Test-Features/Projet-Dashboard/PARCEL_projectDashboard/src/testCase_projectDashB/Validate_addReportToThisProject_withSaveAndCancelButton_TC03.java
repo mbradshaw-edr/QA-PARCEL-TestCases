@@ -46,7 +46,7 @@ public class Validate_addReportToThisProject_withSaveAndCancelButton_TC03 {
 	//By Logout= By.xpath(".//*[@id='SnehalPatilMenu']/li/ul/li[4]/a");
 	
 	public WebDriver wd;
-	ExcelR1 obj=new ExcelR1("C:\\Users\\Admin\\workspace\\PARCEL_projectDashboard\\src\\testData\\TestData1.xlsx");
+	ExcelR1 obj=new ExcelR1("..\\PARCEL_projectDashboard\\src\\testData\\TestData1.xlsx");
 	
     public static void HighlightElement(WebDriver wd, WebElement element) throws InterruptedException
     {
@@ -73,6 +73,7 @@ public class Validate_addReportToThisProject_withSaveAndCancelButton_TC03 {
 	/* Method for setting valid data for user name field */
 	public void click_onAddToThisProjectLink_underProjectDashboardPage() throws InterruptedException
 	{
+		Thread.sleep(8000);
 		WebElement e=wd.findElement(AddReportToThisProjectLink_underProjectDashboard);
 		HighlightElement(wd, e);
 		e.click();
@@ -131,7 +132,7 @@ public class Validate_addReportToThisProject_withSaveAndCancelButton_TC03 {
 		WebElement e3=wd.findElement(CountryDD);
 		HighlightElement(wd, e3);
 		e3.click();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		e3.click();
 		
 		WebElement e4=wd.findElement(CityTextField);
@@ -145,7 +146,6 @@ public class Validate_addReportToThisProject_withSaveAndCancelButton_TC03 {
 		Select ss1=new Select(e5);
 		ss1.selectByVisibleText("Texas");
 		e5.click();
-		Thread.sleep(1000);
 		
 		WebElement e6=wd.findElement(ZipTextField);
 		e6.sendKeys(ExcelR1.getData("Data for AddReportToThisProject",1,5));
@@ -198,7 +198,7 @@ public class Validate_addReportToThisProject_withSaveAndCancelButton_TC03 {
 		Select ss3=new Select(e14);
 		ss3.selectByVisibleText("Automotive");
 		e14.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		
 		WebElement e15=wd.findElement(TreansactionTypeDD);
 		windowScroll();

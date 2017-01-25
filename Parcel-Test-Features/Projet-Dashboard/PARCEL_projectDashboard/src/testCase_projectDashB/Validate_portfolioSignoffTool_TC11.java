@@ -63,7 +63,7 @@ public class Validate_portfolioSignoffTool_TC11 {
 	public Login m1=new Login(wd);
 	//public Login m2=new Login(wd);
 	
-	ExcelR1 obj=new ExcelR1("C:\\Users\\Admin\\workspace\\PARCEL_projectDashboard\\src\\testData\\TestData1.xlsx");
+	ExcelR1 obj=new ExcelR1("..\\PARCEL_projectDashboard\\src\\testData\\TestData1.xlsx");
 	
     public static void HighlightElement(WebDriver wd, WebElement element) throws InterruptedException
     {

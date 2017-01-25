@@ -18,7 +18,7 @@ public class Validate_generateProjectDashboardAsPDFLink_TC04 {
 	public WebDriver wd;
 	public String ParentWindow;
 	public Set<String> s1;
-	ExcelR1 obj=new ExcelR1("C:\\Users\\Admin\\workspace\\PARCEL_projectDashboard\\src\\testData\\TestData1.xlsx");
+	ExcelR1 obj=new ExcelR1("..\\PARCEL_projectDashboard\\src\\testData\\TestData1.xlsx");
 	
     public static void HighlightElement(WebDriver wd, WebElement element) throws InterruptedException
     {

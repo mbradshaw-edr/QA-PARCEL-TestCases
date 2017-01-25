@@ -34,7 +34,7 @@ public class Validate_portfolioDownloadSecondStep_TC09 {
 	public String ParentWindow;
 	public String ChildWindow;
 	public Set<String> s1;
-	ExcelR1 obj=new ExcelR1("C:\\Users\\Admin\\workspace\\PARCEL_projectDashboard\\src\\testData\\TestData1.xlsx");
+	ExcelR1 obj=new ExcelR1("..\\PARCEL_projectDashboard\\src\\testData\\TestData1.xlsx");
 	
     public static void HighlightElement(WebDriver wd, WebElement element) throws InterruptedException
     {

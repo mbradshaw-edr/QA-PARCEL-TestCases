@@ -29,7 +29,7 @@ public class Validation_otherLinksUnderProjectDashboard_TC12 {
 	public Login m1=new Login(wd);
 	//public Login m2=new Login(wd);
 	
-	ExcelR1 obj=new ExcelR1("C:\\Users\\Admin\\workspace\\PARCEL_projectDashboard\\src\\testData\\TestData1.xlsx");
+	ExcelR1 obj=new ExcelR1("..\\PARCEL_projectDashboard\\src\\testData\\TestData1.xlsx");
 	
     public static void HighlightElement(WebDriver wd, WebElement element) throws InterruptedException
     {
@@ -68,7 +68,7 @@ public class Validation_otherLinksUnderProjectDashboard_TC12 {
              System.out.println(handle1);
              wd.switchTo().window(handle1);
 	          }
-            Thread.sleep(3000);
+            Thread.sleep(4000);
             wd.close();
             Thread.sleep(2000);
             

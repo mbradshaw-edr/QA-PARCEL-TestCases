@@ -26,7 +26,7 @@ public class Validate_editProjectInformationLink_withSaveAndCancelButton_TC02 {
 	//By Logout= By.xpath(".//*[@id='SnehalPatilMenu']/li/ul/li[4]/a");
 	
 	public WebDriver wd;
-	ExcelR1 obj=new ExcelR1("C:\\Users\\Admin\\workspace\\PARCEL_projectDashboard\\src\\testData\\TestData1.xlsx");
+	ExcelR1 obj=new ExcelR1("..\\PARCEL_projectDashboard\\src\\testData\\TestData1.xlsx");
 	
     public static void HighlightElement(WebDriver wd, WebElement element) throws InterruptedException
     {
@@ -47,10 +47,12 @@ public class Validate_editProjectInformationLink_withSaveAndCancelButton_TC02 {
 	/* Method for setting valid data for user name field */
 	public void click_onEditProjectInformationLink() throws InterruptedException
 	{
+		Thread.sleep(8000);
 		WebElement e=wd.findElement(EditProjectLink_underProjectDashboard);
 		HighlightElement(wd, e);
 		e.click();
 		Thread.sleep(3000);
+		
 		
 	}
 	
