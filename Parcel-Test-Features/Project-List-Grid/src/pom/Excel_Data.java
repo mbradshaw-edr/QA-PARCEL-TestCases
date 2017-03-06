@@ -16,6 +16,7 @@ public class Excel_Data {
 	XSSFSheet sheet1;
 	XSSFSheet sheet2;
 	XSSFSheet sheet3;
+	XSSFSheet sheet4;
 	public int rowcount;
 	public int rowcount2;
 	public int rowcount3;
@@ -31,6 +32,7 @@ public class Excel_Data {
 	    sheet1= wb.getSheetAt(SheetNumber);
 		sheet2= wb.getSheetAt(SheetNumber);
 		sheet3= wb.getSheetAt(SheetNumber);
+		sheet4= wb.getSheetAt(SheetNumber);
 	    rowcount= sheet1.getLastRowNum();	
 	    rowcount2= sheet2.getLastRowNum();
 	    rowcount3= sheet3.getLastRowNum();
@@ -88,6 +90,20 @@ public class Excel_Data {
 		Cell cell = sheet3.getRow(row).getCell(column);
 		String excelPassword = formatter.formatCellValue(cell);
 		return excelPassword;	
+	}
+	
+	public String Browser(int row, int column) {
+		DataFormatter formatter = new DataFormatter(); 
+		Cell cell = sheet4.getRow(row).getCell(column);
+		String excelBrowser = formatter.formatCellValue(cell);
+		return excelBrowser;	
+	}
+	
+	public String URL(int row, int column) {
+		DataFormatter formatter = new DataFormatter(); 
+		Cell cell = sheet4.getRow(row).getCell(column);
+		String excelURL = formatter.formatCellValue(cell);
+		return excelURL;	
 	}
 	
 	public void writeonexcel(String writeonexcelpath) throws Exception{

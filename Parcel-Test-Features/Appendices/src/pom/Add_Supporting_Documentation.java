@@ -36,8 +36,8 @@ public class Add_Supporting_Documentation {
 	@FindBy(how=How.XPATH,using="//*[@id='conversationDateButton']")
 	WebElement Communication_Date_Icon;
 	
-	@FindBy(how=How.XPATH,using="html/body/div[1]/table/tbody/tr[1]/td[1]/button")
-	WebElement Communication_Date_1Jan;
+	@FindBy(how=How.XPATH,using="//button[text()='15']")
+	WebElement Communication_Date_15;
 	
 	@FindBy(how=How.XPATH,using="html/body/form/table/tbody/tr[5]/td[2]/input")
 	WebElement Communication_RE;
@@ -93,8 +93,8 @@ public class Add_Supporting_Documentation {
 	@FindBy(how=How.XPATH,using="//*[@id='responseDate']")
 	WebElement Questionnaire_Date_Icon;
 	
-	@FindBy(how=How.XPATH,using="html/body/div[1]/table/tbody/tr[1]/td[3]/button")
-	WebElement Questionnaire_Date_3Jan;
+	@FindBy(how=How.XPATH,using="//button[text()='15']")
+	WebElement Questionnaire_Date_15;
 	
 	@FindBy(how=How.XPATH,using="html/body/center/form/table[2]/tbody/tr/td/table/tbody/tr[3]/td[2]")
 	WebElement Questionnaire_Address;
@@ -226,8 +226,8 @@ public class Add_Supporting_Documentation {
 		HighlightElement(driver, Communication_Date_Icon);
 		Communication_Date_Icon.click();
 		Thread.sleep(2000);
-		HighlightElement(driver, Communication_Date_1Jan);
-		Communication_Date_1Jan.click();
+		HighlightElement(driver, Communication_Date_15);
+		Communication_Date_15.click();
 		Thread.sleep(2000);
 		HighlightElement(driver, Communication_RE);
 		Communication_RE.sendKeys("Test RE");
@@ -413,8 +413,8 @@ public class Add_Supporting_Documentation {
 	HighlightElement(driver, Questionnaire_Date_Icon);
 	Questionnaire_Date_Icon.click();
 	Thread.sleep(1000);
-	HighlightElement(driver, Questionnaire_Date_3Jan);
-	Questionnaire_Date_3Jan.click();
+	HighlightElement(driver, Questionnaire_Date_15);
+	Questionnaire_Date_15.click();
 	Thread.sleep(2000);
 	
 	for (WebElement AQN : All_Questionnaire_NoCheckboxes) {

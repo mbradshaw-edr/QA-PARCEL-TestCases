@@ -6,24 +6,7 @@
       <class name="appendices.Main_Appendices">
         <methods>
           <include name="Send_Questionnaire_Email"/>
-          <include name="Refresh_OpenAll_CloseAll_Delete_Functionality"/>
-          <include name="Add_Comment"/>
-          <include name="Check_PDF_Exclude_Include_Sort_Delete"/>
-          <include name="View_Image"/>
-          <include name="login"/>
-          <include name="Check_Checkboxes_Functionality"/>
-          <include name="Edit_All_Option"/>
-          <include name="Drag_And_Drop_Image"/>
-          <include name="Include_Exclude_Zoom_Delete_Options"/>
-          <include name="Add_Communication_Record"/>
-          <include name="Add_Image"/>
-          <include name="Add_ADA_Checklist"/>
           <include name="Add_User_Questionnaire"/>
-          <include name="Check_Comments_Subtab"/>
-          <include name="Check_Appendices_Tab"/>
-          <include name="Add_FHA_Checklist"/>
-          <include name="Check_Upload_PDF"/>
-          <include name="Check_Section_Dropdown"/>
         </methods>
       </class> <!-- appendices.Main_Appendices -->
     </classes>
