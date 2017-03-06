@@ -149,45 +149,103 @@ public class Templates_Page {
 		WebElement Transmittal_Letter_Dropdown=driver.findElement(By.xpath("//*[@id='divTempdefEdit']/form/table/tbody/tr["+Template_Counter+"]/td[5]/select"));		
 		WebElement Cover_Page_Dropdown=driver.findElement(By.xpath("//*[@id='divTempdefEdit']/form/table/tbody/tr["+Template_Counter+"]/td[6]/select"));		
 		WebElement Save_Changes=driver.findElement(By.xpath("//input[@value='Save Changes']"));		
-	
+		String Old_Language_Option;
+		String Old_Report_Setup_Option;
+		String Old_TOC_Setup_Option;
+		String Old_Transmittal_Letter_Option;
+		String Old_Cover_Page_Option;
+			List<String> Language_Options_array = new ArrayList<>();
 			HighlightElement(driver, Default_Language_Library_Dropdown);
 			Select Select_Language = new Select(Default_Language_Library_Dropdown);
+			Old_Language_Option = (Select_Language.getFirstSelectedOption()).getAttribute("Value");
 			if (i == 1) {
 				Select_Language.selectByIndex(3);
 			} else {
-				Select_Language.selectByValue(excel_Template_Setup.Template_Setup(1, 0));
+				List<WebElement> All_Language_Options = Select_Language.getOptions();
+				for (WebElement ALO : All_Language_Options) {
+					Language_Options_array.add(ALO.getAttribute("Value"));
+				}
+				if (Language_Options_array.contains(excel_Template_Setup.Template_Setup(1, 0))) {
+					Select_Language.selectByValue(excel_Template_Setup.Template_Setup(1, 0));
+
+				} else {
+					Select_Language.selectByValue(Old_Language_Option);
+				}
 			}
 			Thread.sleep(3000);
 			HighlightElement(driver, Report_Setup_Dropdown);
+			List<String> Report_Setup_Options_array = new ArrayList<>();
 			Select Select_Report_Setup = new Select(Report_Setup_Dropdown);
+			Old_Report_Setup_Option = (Select_Report_Setup.getFirstSelectedOption()).getAttribute("Value");
 			if (i == 1) {
 				Select_Report_Setup.selectByIndex(3);
 			} else {
-				Select_Report_Setup.selectByValue(excel_Template_Setup.Template_Setup(1, 1));
+				List<WebElement> All_Report_Setup_Options = Select_Report_Setup.getOptions();
+				for (WebElement ARSO : All_Report_Setup_Options) {
+					Report_Setup_Options_array.add(ARSO.getAttribute("Value"));
+				}
+				if (Report_Setup_Options_array.contains(excel_Template_Setup.Template_Setup(1, 1))) {
+					Select_Report_Setup.selectByValue(excel_Template_Setup.Template_Setup(1, 1));
+
+				} else {
+					Select_Report_Setup.selectByValue(Old_Report_Setup_Option);
+				}
+				
 			}
 			Thread.sleep(3000);
 			HighlightElement(driver, TOC_Setup_Dropdown);
+			List<String> TOC_Setup_Options_array = new ArrayList<>();
 			Select Select_TOC_Setup = new Select(TOC_Setup_Dropdown);
+			Old_TOC_Setup_Option = (Select_TOC_Setup.getFirstSelectedOption()).getAttribute("Value");
 			if (i == 1) {
 				Select_TOC_Setup.selectByIndex(3);
 			} else {
-				Select_TOC_Setup.selectByValue(excel_Template_Setup.Template_Setup(1, 2));
+				List<WebElement> All_TOC_Setup_Options = Select_TOC_Setup.getOptions();
+				for (WebElement ATSO : All_TOC_Setup_Options) {
+					TOC_Setup_Options_array.add(ATSO.getAttribute("Value"));
+				}
+				if (All_TOC_Setup_Options.contains(excel_Template_Setup.Template_Setup(1, 2))) {
+					Select_TOC_Setup.selectByValue(excel_Template_Setup.Template_Setup(1, 2));
+
+				} else {
+					Select_TOC_Setup.selectByValue(Old_TOC_Setup_Option);
+				}
 			}
 			Thread.sleep(3000);
 			HighlightElement(driver, Transmittal_Letter_Dropdown);
+			List<String> Transmittal_Letter_Options_array = new ArrayList<>();
 			Select Select_Transmittal_Letter = new Select(Transmittal_Letter_Dropdown);
+			Old_Transmittal_Letter_Option = (Select_Transmittal_Letter.getFirstSelectedOption()).getAttribute("Value");
 			if (i == 1) {
 				Select_Transmittal_Letter.selectByIndex(3);
 			} else {
-				Select_Transmittal_Letter.selectByValue(excel_Template_Setup.Template_Setup(1, 3));
+				List<WebElement> All_Transmittal_Letter_Options = Select_Transmittal_Letter.getOptions();
+				for (WebElement ATLO : All_Transmittal_Letter_Options) {
+					Transmittal_Letter_Options_array.add(ATLO.getAttribute("Value"));
+				}
+				if (Transmittal_Letter_Options_array.contains(excel_Template_Setup.Template_Setup(1, 3))) {
+					Select_Transmittal_Letter.selectByValue(excel_Template_Setup.Template_Setup(1, 3));
+				} else {
+					Select_Transmittal_Letter.selectByValue(Old_Transmittal_Letter_Option);
+				}
 			}
 			Thread.sleep(3000);
 			HighlightElement(driver, Cover_Page_Dropdown);
+			List<String> Cover_Page_Options_array = new ArrayList<>();
 			Select Select_Cover_Page = new Select(Cover_Page_Dropdown);
+			Old_Cover_Page_Option = (Select_Cover_Page.getFirstSelectedOption()).getAttribute("Value");
 			if (i == 1) {
 				Select_Cover_Page.selectByIndex(3);
 			} else {
-				Select_Cover_Page.selectByValue(excel_Template_Setup.Template_Setup(1, 4));
+				List<WebElement> All_Cover_Page_Options = Select_Cover_Page.getOptions();
+				for (WebElement ACPO : All_Cover_Page_Options) {
+					Cover_Page_Options_array.add(ACPO.getAttribute("Value"));
+				}
+				if (Cover_Page_Options_array.contains(excel_Template_Setup.Template_Setup(1, 4))) {
+					Select_Cover_Page.selectByValue(excel_Template_Setup.Template_Setup(1, 4));
+				} else {
+					Select_Cover_Page.selectByValue(Old_Cover_Page_Option);
+				}
 			}
 			Thread.sleep(3000);
 			JavascriptExecutor JT = (JavascriptExecutor) driver;
@@ -204,8 +262,12 @@ public class Templates_Page {
 		Open_Template(excel.Template_Name(1, 1));
 		Thread.sleep(5000);
 		HighlightElement(driver, I_Want_to_Dropdown);
-		Select Select_Action = new Select(I_Want_to_Dropdown);
-		Select_Action.selectByValue("makeDefault");
+		try {
+			Select Select_Action = new Select(I_Want_to_Dropdown);
+			Select_Action.selectByValue("makeDefault");
+		} catch (Exception e) {
+	
+		}
 		WebElement Save_Template_Changes=driver.findElement(By.xpath("html/body/div[2]/div/div/div/div/div/div/form[2]/table/tbody/tr[3]/td"));
 		HighlightElement(driver, Save_Template_Changes);
 		New_Template_Name_And_Save_Template_Webelement(excel.Template_Name(1, 2), "showRename");

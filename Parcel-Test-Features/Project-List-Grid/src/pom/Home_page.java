@@ -6,6 +6,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -23,6 +24,7 @@ public class Home_page {
 		String Excel_city;
 		String AllReports_name="";
 		String Report_name="";	
+		public static String Created_Report_SiteId;
 		
 		 @FindBy(how=How.XPATH,using="html/body/div[2]/div/div/div/div/div/div[2]/div/div/div/ul/li[1]/a")
 		 WebElement New_single_site_project;
@@ -240,6 +242,15 @@ public class Home_page {
 				jse.executeScript("arguments[0].setAttribute('style', arguments[1]);", element,"");
 			}
 		
+		private boolean ExistsElement(WebElement Element) {
+		    try {
+		    	Element.getText();
+		    } catch (NoSuchElementException e) {
+		        return false;
+		    }
+		    return true;
+		}
+		
 		public void Print_Project_name(WebElement classic_TOC_projectname, WebElement TOC_projectname) throws Exception{
 			
 			if(!classic_TOC_projectname.isDisplayed()){
@@ -303,24 +314,18 @@ public class Home_page {
 			Report_icon.click();
 			Thread.sleep(12000);
 			
-			try {
-				
+			if(ExistsElement(TOC_projectname)){
 			HighlightElement(driver, TOC_projectname);
 			System.out.println("Newly Created Project name on report page: "+TOC_projectname.getText());
 			Home_tab.click();
-			}catch (Exception e) {
-				
-				
 			}
-			
-			try {
-				HighlightElement(driver, classic_TOC_projectname);
-				System.out.println(classic_TOC_projectname.getText()+" on report page in classic view.");
-				classic_Home_tab.click();
-				
-		} catch (Exception e) {
-
-		}
+			else if(ExistsElement(classic_TOC_projectname)){
+			HighlightElement(driver, classic_TOC_projectname);
+			System.out.println(classic_TOC_projectname.getText()+" on report page in classic view.");
+			classic_Home_tab.click();
+			}else{
+			driver.navigate().back();	
+			}
 			
 			Thread.sleep(8000);
 			HighlightElement(driver, Project_icon);
@@ -335,23 +340,17 @@ public class Home_page {
 			Actions action = new Actions(driver);
 			action.moveToElement(first_report_in_grid).doubleClick().perform();
 			Thread.sleep(15000);
-			try {
+			if(ExistsElement(TOC_projectname)){
 				HighlightElement(driver, TOC_projectname);
 				System.out.println("Project name on TOC section of report page after double click on report in grid: "+TOC_projectname.getText());
 				Home_tab.click();
-				}catch (Exception e) {
-				
-				}
-				
-		try {
+			}else if(ExistsElement(classic_TOC_projectname)){
 			HighlightElement(driver, classic_TOC_projectname);
 			System.out.println("Project name on report page in classic view after double click on report in grid: "+classic_TOC_projectname.getText());
 			classic_Home_tab.click();
-					
-		} catch (Exception e) {
-
-		}
-		
+			}else{
+			driver.navigate().back();	
+			}
 			Thread.sleep(8000);
 			first_report_in_grid.click();
 			HighlightElement(driver, grantaccess);
@@ -424,6 +423,7 @@ public class Home_page {
 				}
 			Search_city.sendKeys(Keys.ENTER);
 			Thread.sleep(15000);
+			Created_Report_SiteId=  driver.findElement(By.xpath("//td[contains(@aria-describedby, 'SiteID')]")).getText();
 			Clear_Column_Filters();
 			Thread.sleep(8000);
 		/*	remove_projectfilter.click();

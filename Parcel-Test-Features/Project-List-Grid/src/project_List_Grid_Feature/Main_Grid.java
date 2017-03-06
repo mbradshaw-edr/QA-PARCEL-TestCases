@@ -19,7 +19,6 @@ import pom.Upload_Company_Logo_Page;
 
 public class Main_Grid {
 	WebDriver driver = Browsers.startbrowser("chrome", "https://www.parcelplatform.com/reporting/login.php");
-	
 	Login_page Login_page = PageFactory.initElements(driver, Login_page.class);
 	Home_page Home_page = PageFactory.initElements(driver, Home_page.class);
 	Project_Setup_page Project_Setup_page = PageFactory.initElements(driver, Project_Setup_page.class);

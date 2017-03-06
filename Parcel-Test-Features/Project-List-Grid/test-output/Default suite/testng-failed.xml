@@ -5,8 +5,7 @@
     <classes>
       <class name="project_List_Grid_Feature.Main_Grid">
         <methods>
-          <include name="Check_Page_Headers"/>
-          <include name="Check_Start_Menus"/>
+          <include name="Check_Header_Menus"/>
         </methods>
       </class> <!-- project_List_Grid_Feature.Main_Grid -->
     </classes>

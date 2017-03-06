@@ -2,84 +2,84 @@
 <testng-results skipped="0" failed="0" total="19" passed="19">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2092789" started-at="2017-01-11T09:54:46Z" finished-at="2017-01-11T10:29:38Z">
+  <suite name="Default suite" duration-ms="2149939" started-at="2017-03-06T10:08:19Z" finished-at="2017-03-06T10:44:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2092789" started-at="2017-01-11T09:54:46Z" finished-at="2017-01-11T10:29:38Z">
+    <test name="Default test" duration-ms="2149939" started-at="2017-03-06T10:08:19Z" finished-at="2017-03-06T10:44:09Z">
       <class name="appendices.Main_Appendices">
-        <test-method status="PASS" signature="login()[pri:1, instance:appendices.Main_Appendices@14555e0a]" name="login" duration-ms="24501" started-at="2017-01-11T15:24:46Z" finished-at="2017-01-11T15:25:10Z">
+        <test-method status="PASS" signature="login()[pri:1, instance:appendices.Main_Appendices@14555e0a]" name="login" duration-ms="25867" started-at="2017-03-06T15:38:19Z" finished-at="2017-03-06T15:38:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="Check_Appendices_Tab()[pri:2, instance:appendices.Main_Appendices@14555e0a]" name="Check_Appendices_Tab" duration-ms="189302" started-at="2017-01-11T15:25:10Z" finished-at="2017-01-11T15:28:19Z">
+        <test-method status="PASS" signature="Check_Appendices_Tab()[pri:2, instance:appendices.Main_Appendices@14555e0a]" name="Check_Appendices_Tab" duration-ms="178542" started-at="2017-03-06T15:38:45Z" finished-at="2017-03-06T15:41:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Check_Appendices_Tab -->
-        <test-method status="PASS" signature="Add_Image()[pri:3, instance:appendices.Main_Appendices@14555e0a]" name="Add_Image" duration-ms="91389" started-at="2017-01-11T15:28:19Z" finished-at="2017-01-11T15:29:51Z">
+        <test-method status="PASS" signature="Add_Image()[pri:3, instance:appendices.Main_Appendices@14555e0a]" name="Add_Image" duration-ms="92613" started-at="2017-03-06T15:41:44Z" finished-at="2017-03-06T15:43:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Add_Image -->
-        <test-method status="PASS" signature="Drag_And_Drop_Image()[pri:4, instance:appendices.Main_Appendices@14555e0a]" name="Drag_And_Drop_Image" duration-ms="27108" started-at="2017-01-11T15:29:51Z" finished-at="2017-01-11T15:30:18Z">
+        <test-method status="PASS" signature="Drag_And_Drop_Image()[pri:4, instance:appendices.Main_Appendices@14555e0a]" name="Drag_And_Drop_Image" duration-ms="27254" started-at="2017-03-06T15:43:16Z" finished-at="2017-03-06T15:43:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Drag_And_Drop_Image -->
-        <test-method status="PASS" signature="View_Image()[pri:5, instance:appendices.Main_Appendices@14555e0a]" name="View_Image" duration-ms="64979" started-at="2017-01-11T15:30:18Z" finished-at="2017-01-11T15:31:23Z">
+        <test-method status="PASS" signature="View_Image()[pri:5, instance:appendices.Main_Appendices@14555e0a]" name="View_Image" duration-ms="65829" started-at="2017-03-06T15:43:43Z" finished-at="2017-03-06T15:44:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- View_Image -->
-        <test-method status="PASS" signature="Edit_All_Option()[pri:6, instance:appendices.Main_Appendices@14555e0a]" name="Edit_All_Option" duration-ms="98245" started-at="2017-01-11T15:31:23Z" finished-at="2017-01-11T15:33:01Z">
+        <test-method status="PASS" signature="Edit_All_Option()[pri:6, instance:appendices.Main_Appendices@14555e0a]" name="Edit_All_Option" duration-ms="99216" started-at="2017-03-06T15:44:49Z" finished-at="2017-03-06T15:46:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Edit_All_Option -->
-        <test-method status="PASS" signature="Include_Exclude_Zoom_Delete_Options()[pri:7, instance:appendices.Main_Appendices@14555e0a]" name="Include_Exclude_Zoom_Delete_Options" duration-ms="51384" started-at="2017-01-11T15:33:01Z" finished-at="2017-01-11T15:33:53Z">
+        <test-method status="PASS" signature="Include_Exclude_Zoom_Delete_Options()[pri:7, instance:appendices.Main_Appendices@14555e0a]" name="Include_Exclude_Zoom_Delete_Options" duration-ms="52724" started-at="2017-03-06T15:46:29Z" finished-at="2017-03-06T15:47:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Include_Exclude_Zoom_Delete_Options -->
-        <test-method status="PASS" signature="Check_Upload_PDF()[pri:8, instance:appendices.Main_Appendices@14555e0a]" name="Check_Upload_PDF" duration-ms="181401" started-at="2017-01-11T15:33:53Z" finished-at="2017-01-11T15:36:54Z">
+        <test-method status="PASS" signature="Check_Upload_PDF()[pri:8, instance:appendices.Main_Appendices@14555e0a]" name="Check_Upload_PDF" duration-ms="179181" started-at="2017-03-06T15:47:21Z" finished-at="2017-03-06T15:50:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Check_Upload_PDF -->
-        <test-method status="PASS" signature="Check_PDF_Exclude_Include_Sort_Delete()[pri:9, instance:appendices.Main_Appendices@14555e0a]" name="Check_PDF_Exclude_Include_Sort_Delete" duration-ms="95932" started-at="2017-01-11T15:36:54Z" finished-at="2017-01-11T15:38:30Z">
+        <test-method status="PASS" signature="Check_PDF_Exclude_Include_Sort_Delete()[pri:9, instance:appendices.Main_Appendices@14555e0a]" name="Check_PDF_Exclude_Include_Sort_Delete" duration-ms="97445" started-at="2017-03-06T15:50:20Z" finished-at="2017-03-06T15:51:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Check_PDF_Exclude_Include_Sort_Delete -->
-        <test-method status="PASS" signature="Check_Comments_Subtab()[pri:10, instance:appendices.Main_Appendices@14555e0a]" name="Check_Comments_Subtab" duration-ms="52352" started-at="2017-01-11T15:38:30Z" finished-at="2017-01-11T15:39:22Z">
+        <test-method status="PASS" signature="Check_Comments_Subtab()[pri:10, instance:appendices.Main_Appendices@14555e0a]" name="Check_Comments_Subtab" duration-ms="53754" started-at="2017-03-06T15:51:58Z" finished-at="2017-03-06T15:52:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Check_Comments_Subtab -->
-        <test-method status="PASS" signature="Add_Comment()[pri:11, instance:appendices.Main_Appendices@14555e0a]" name="Add_Comment" duration-ms="167598" started-at="2017-01-11T15:39:22Z" finished-at="2017-01-11T15:42:10Z">
+        <test-method status="PASS" signature="Add_Comment()[pri:11, instance:appendices.Main_Appendices@14555e0a]" name="Add_Comment" duration-ms="173344" started-at="2017-03-06T15:52:52Z" finished-at="2017-03-06T15:55:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Add_Comment -->
-        <test-method status="PASS" signature="Check_Section_Dropdown()[pri:12, instance:appendices.Main_Appendices@14555e0a]" name="Check_Section_Dropdown" duration-ms="92977" started-at="2017-01-11T15:42:10Z" finished-at="2017-01-11T15:43:43Z">
+        <test-method status="PASS" signature="Check_Section_Dropdown()[pri:12, instance:appendices.Main_Appendices@14555e0a]" name="Check_Section_Dropdown" duration-ms="93963" started-at="2017-03-06T15:55:45Z" finished-at="2017-03-06T15:57:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Check_Section_Dropdown -->
-        <test-method status="PASS" signature="Check_Checkboxes_Functionality()[pri:13, instance:appendices.Main_Appendices@14555e0a]" name="Check_Checkboxes_Functionality" duration-ms="139061" started-at="2017-01-11T15:43:43Z" finished-at="2017-01-11T15:46:02Z">
+        <test-method status="PASS" signature="Check_Checkboxes_Functionality()[pri:13, instance:appendices.Main_Appendices@14555e0a]" name="Check_Checkboxes_Functionality" duration-ms="141571" started-at="2017-03-06T15:57:19Z" finished-at="2017-03-06T15:59:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Check_Checkboxes_Functionality -->
-        <test-method status="PASS" signature="Refresh_OpenAll_CloseAll_Delete_Functionality()[pri:14, instance:appendices.Main_Appendices@14555e0a]" name="Refresh_OpenAll_CloseAll_Delete_Functionality" duration-ms="80420" started-at="2017-01-11T15:46:02Z" finished-at="2017-01-11T15:47:22Z">
+        <test-method status="PASS" signature="Refresh_OpenAll_CloseAll_Delete_Functionality()[pri:14, instance:appendices.Main_Appendices@14555e0a]" name="Refresh_OpenAll_CloseAll_Delete_Functionality" duration-ms="82892" started-at="2017-03-06T15:59:41Z" finished-at="2017-03-06T16:01:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Refresh_OpenAll_CloseAll_Delete_Functionality -->
-        <test-method status="PASS" signature="Add_Communication_Record()[pri:15, instance:appendices.Main_Appendices@14555e0a]" name="Add_Communication_Record" duration-ms="71122" started-at="2017-01-11T15:47:22Z" finished-at="2017-01-11T15:48:33Z">
+        <test-method status="PASS" signature="Add_Communication_Record()[pri:15, instance:appendices.Main_Appendices@14555e0a]" name="Add_Communication_Record" duration-ms="71166" started-at="2017-03-06T16:01:03Z" finished-at="2017-03-06T16:02:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Add_Communication_Record -->
-        <test-method status="PASS" signature="Add_ADA_Checklist()[pri:16, instance:appendices.Main_Appendices@14555e0a]" name="Add_ADA_Checklist" duration-ms="290676" started-at="2017-01-11T15:48:33Z" finished-at="2017-01-11T15:53:24Z">
+        <test-method status="PASS" signature="Add_ADA_Checklist()[pri:16, instance:appendices.Main_Appendices@14555e0a]" name="Add_ADA_Checklist" duration-ms="289549" started-at="2017-03-06T16:02:15Z" finished-at="2017-03-06T16:07:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Add_ADA_Checklist -->
-        <test-method status="PASS" signature="Add_FHA_Checklist()[pri:17, instance:appendices.Main_Appendices@14555e0a]" name="Add_FHA_Checklist" duration-ms="154443" started-at="2017-01-11T15:53:24Z" finished-at="2017-01-11T15:55:59Z">
+        <test-method status="PASS" signature="Add_FHA_Checklist()[pri:17, instance:appendices.Main_Appendices@14555e0a]" name="Add_FHA_Checklist" duration-ms="154286" started-at="2017-03-06T16:07:04Z" finished-at="2017-03-06T16:09:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Add_FHA_Checklist -->
-        <test-method status="PASS" signature="Add_User_Questionnaire()[pri:18, instance:appendices.Main_Appendices@14555e0a]" name="Add_User_Questionnaire" duration-ms="153822" started-at="2017-01-11T15:55:59Z" finished-at="2017-01-11T15:58:32Z">
+        <test-method status="PASS" signature="Add_User_Questionnaire()[pri:18, instance:appendices.Main_Appendices@14555e0a]" name="Add_User_Questionnaire" duration-ms="203821" started-at="2017-03-06T16:09:38Z" finished-at="2017-03-06T16:13:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Add_User_Questionnaire -->
-        <test-method status="PASS" signature="Send_Questionnaire_Email()[pri:19, instance:appendices.Main_Appendices@14555e0a]" name="Send_Questionnaire_Email" duration-ms="65956" started-at="2017-01-11T15:58:32Z" finished-at="2017-01-11T15:59:38Z">
+        <test-method status="PASS" signature="Send_Questionnaire_Email()[pri:19, instance:appendices.Main_Appendices@14555e0a]" name="Send_Questionnaire_Email" duration-ms="66796" started-at="2017-03-06T16:13:02Z" finished-at="2017-03-06T16:14:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Send_Questionnaire_Email -->

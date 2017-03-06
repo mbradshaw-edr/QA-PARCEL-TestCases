@@ -18,6 +18,8 @@ public class Header_Menus_Home_Page {
 	WebDriver driver;
 	String ExcelSite_Id;
 	
+	Home_page Home_page = PageFactory.initElements(driver, Home_page.class);
+	
 	@FindBy(how=How.XPATH,using="//*[@id='header-nav']/li[3]/a")
 	WebElement Home_tab;
 	
@@ -298,14 +300,15 @@ public class Header_Menus_Home_Page {
 		}
 		System.out.println("All Options present under Username Dropdown: "+All_Username_Options_Array);
 	}
-	public void Open_Report_In_Simplified() throws Exception{
+	public void Open_Report_In_Simplified(String Recently_Created_SiteId) throws Exception{
 		
-		Excel_Data excel= new Excel_Data(1, "src\\Test_Data\\Project_List_Grid_Feature.xlsx");
+		/*Excel_Data excel= new Excel_Data(1, "src\\Test_Data\\Project_List_Grid_Feature.xlsx");
 		for(int i=1; i<=excel.rowcount2; i++)
 		{
 		ExcelSite_Id=excel.Site_Id(i, 0);
 		}
-		Search_SiteID.sendKeys(ExcelSite_Id);	
+		Search_SiteID.sendKeys(ExcelSite_Id);	*/
+		Search_SiteID.sendKeys(Recently_Created_SiteId);
 		Search_SiteID.sendKeys(Keys.ENTER);
 		Thread.sleep(8000);
 		HighlightElement(driver, first_report_in_grid);
@@ -327,6 +330,7 @@ public void Open_SiteID_In_Simplified() throws Exception{
 		Thread.sleep(6000);	
 	}
 	
+	@SuppressWarnings("static-access")
 	public void Check_Header_Menus() throws Exception{
 	Thread.sleep(2000);	
 	HighlightElement(driver, Header_EDR_Logo);
@@ -347,7 +351,7 @@ public void Open_SiteID_In_Simplified() throws Exception{
 	highlight_All_Headers();
 	Home_tab.click();
 	Thread.sleep(8000);
-	Open_Report_In_Simplified();	
+	Open_Report_In_Simplified(Home_page.Created_Report_SiteId);	
 	
 	try {
 		classic_Home_tab.click();

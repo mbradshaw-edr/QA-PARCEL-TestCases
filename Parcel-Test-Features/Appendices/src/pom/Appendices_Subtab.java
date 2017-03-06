@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -18,6 +19,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.Select;
+
+import pom.Capture_Screenshot;
 
 public class Appendices_Subtab {
 	
@@ -75,6 +78,21 @@ public class Appendices_Subtab {
 	@FindBy(how=How.XPATH,using="//*[@id='submitDownloadDeliverable']")
 	WebElement Assemble_Tab_Download_PDF;
 	
+	@FindBy(id="submitDownloadDeliverable")
+	WebElement Download_PDF;
+	
+	@FindBy(xpath="(//div[@class='pull-right']/div/button)[1]")
+	WebElement Download_File_Dropdown;
+	
+	@FindBy(xpath="(//div[@class='pull-right']/div/ul/li/a[text()='PDF'])[1]")
+	WebElement PDF_Option_Download_File_Dropdown;
+	
+	@FindBy(xpath="(//div[@class='pull-right']/div/ul/li/a[text()='Word'])[1]")
+	WebElement Word_Option_Download_File_Dropdown;
+	
+	@FindBy(xpath="//*[@id='submit_word_popup_Report']")
+	WebElement submit_word_popup;
+	
 	
 	
 	public Appendices_Subtab(WebDriver driver){
@@ -87,6 +105,75 @@ public class Appendices_Subtab {
 		jse.executeScript("arguments[0].setAttribute('style',arguments[1]);", element,"border: 5px solid red;");
 		Thread.sleep(1500);
 		jse.executeScript("arguments[0].setAttribute('style', arguments[1]);", element,"");
+	}
+	
+	private boolean ExistsElement(WebElement Element) {
+	    try {
+	    	Element.getText();
+	    } catch (NoSuchElementException e) {
+	        return false;
+	    }
+	    return true;
+	}
+	
+	private void Download_PDF_And_Word_File() throws Exception{
+		Thread.sleep(3000);
+		if (ExistsElement(Download_PDF)) {
+			HighlightElement(driver, Download_PDF);
+			if (ExistsElement(Download_File_Dropdown)) {
+				Capture_Screenshot.Take_Screenshot(driver,"Two_Download_PDF_Options");
+
+			} else {
+				Download_PDF.click();
+				Thread.sleep(1000);
+				try {
+					driver.switchTo().alert().accept();
+
+				} catch (Exception e) {
+
+				}
+				Thread.sleep(5000);
+			}
+
+		}
+
+		if (ExistsElement(Download_File_Dropdown)) {
+			HighlightElement(driver, Download_File_Dropdown);
+			Download_File_Dropdown.click();
+			Thread.sleep(500);
+			HighlightElement(driver, PDF_Option_Download_File_Dropdown);
+			PDF_Option_Download_File_Dropdown.click();
+			Thread.sleep(1000);
+			try {
+				driver.switchTo().alert().accept();
+
+			} catch (Exception e) {
+
+			}
+			Download_Word_File();
+			Thread.sleep(5000);
+		}
+
+	}
+	
+	private void Download_Word_File() throws Exception{
+	Thread.sleep(3000);	
+	HighlightElement(driver, Download_File_Dropdown);
+	Download_File_Dropdown.click();
+	Thread.sleep(500);
+	HighlightElement(driver, Word_Option_Download_File_Dropdown);
+	Word_Option_Download_File_Dropdown.click();
+	Thread.sleep(1000);
+	HighlightElement(driver, submit_word_popup);
+	submit_word_popup.click();
+	Thread.sleep(1000);
+		try{
+		driver.switchTo().alert().accept();
+		
+		}catch (Exception e){
+
+		}
+
 	}
 	
 	
@@ -498,10 +585,11 @@ public class Appendices_Subtab {
 					Thread.sleep(10000);	
 					HighlightElement(driver, Assemble_Tab_Check_All);
 					Assemble_Tab_Check_All.click();
-					Thread.sleep(5000);
+					/*Thread.sleep(5000);
 					HighlightElement(driver, Assemble_Tab_Download_PDF);
 					Assemble_Tab_Download_PDF.click();
-					Thread.sleep(15000);
+					Thread.sleep(15000);*/
+					Download_PDF_And_Word_File();
 					HighlightElement(driver, Appendices_Tab);
 					Appendices_Tab.click();
 					Thread.sleep(8000);
