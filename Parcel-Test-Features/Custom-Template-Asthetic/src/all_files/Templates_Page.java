@@ -356,7 +356,7 @@ public class Templates_Page {
 		System.out.println("After did Move template operation on "+excel.Template_Name(1, 2)+" Template still present in Company having ID= "+excel.Company_Id(1, 0));	
 		}
 		else{
-		System.out.println("After did Move template operation on "+excel.Template_Name(1, 2)+" Template is not present in Company having ID= "+excel.Company_Id(1, 0));		
+		System.out.println(excel.Template_Name(1, 2)+" Template was moved into Company ID= "+Move_Template_Into_Company_ID+" and not present in Company having ID= "+excel.Company_Id(1, 0));		
 		}
 		    
 		Open_Templates_Page(Move_Template_Into_Company_ID);
@@ -368,6 +368,7 @@ public class Templates_Page {
 		WebElement Delete_Now=driver.findElement(By.xpath("html/body/div[2]/div/div/div/div/div/form/table/tbody/tr/td/input[@value='Delete Now']"));
 		HighlightElement(driver, Delete_Now);
 		Delete_Now.click();
+		System.out.println(excel.Template_Name(1, 2)+" Template deleted from Company ID: "+Move_Template_Into_Company_ID+"");
 		Thread.sleep(2000);	
 		Open_Templates_Page(Move_Template_Into_Company_ID);
 	}

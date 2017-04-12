@@ -2,44 +2,44 @@
 <testng-results skipped="0" failed="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="924201" started-at="2017-03-06T09:51:58Z" finished-at="2017-03-06T10:07:22Z">
+  <suite name="Default suite" duration-ms="1009099" started-at="2017-04-10T11:48:31Z" finished-at="2017-04-10T12:05:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="924201" started-at="2017-03-06T09:51:58Z" finished-at="2017-03-06T10:07:22Z">
+    <test name="Default test" duration-ms="1009099" started-at="2017-04-10T11:48:31Z" finished-at="2017-04-10T12:05:20Z">
       <class name="main_file.Main_Templates">
-        <test-method status="PASS" signature="login()[pri:1, instance:main_file.Main_Templates@ea6147e]" name="login" duration-ms="24059" started-at="2017-03-06T15:21:58Z" finished-at="2017-03-06T15:22:22Z">
+        <test-method status="PASS" signature="login()[pri:1, instance:main_file.Main_Templates@1a942c18]" name="login" duration-ms="24187" started-at="2017-04-10T17:18:31Z" finished-at="2017-04-10T17:18:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="Copy_Template_Into_New_Template_With_Different_Name()[pri:2, instance:main_file.Main_Templates@ea6147e]" name="Copy_Template_Into_New_Template_With_Different_Name" duration-ms="85748" started-at="2017-03-06T15:22:22Z" finished-at="2017-03-06T15:23:48Z">
+        <test-method status="PASS" signature="Copy_Template_Into_New_Template_With_Different_Name()[pri:2, instance:main_file.Main_Templates@1a942c18]" name="Copy_Template_Into_New_Template_With_Different_Name" duration-ms="88325" started-at="2017-04-10T17:18:56Z" finished-at="2017-04-10T17:20:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Copy_Template_Into_New_Template_With_Different_Name -->
-        <test-method status="PASS" signature="Edit_And_Save_All_Setup_Options_For_Template()[pri:3, instance:main_file.Main_Templates@ea6147e]" name="Edit_And_Save_All_Setup_Options_For_Template" duration-ms="213211" started-at="2017-03-06T15:23:48Z" finished-at="2017-03-06T15:27:21Z">
+        <test-method status="PASS" signature="Edit_And_Save_All_Setup_Options_For_Template()[pri:3, instance:main_file.Main_Templates@1a942c18]" name="Edit_And_Save_All_Setup_Options_For_Template" duration-ms="250308" started-at="2017-04-10T17:20:24Z" finished-at="2017-04-10T17:24:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Edit_And_Save_All_Setup_Options_For_Template -->
-        <test-method status="PASS" signature="Make_Default_And_Rename_Template()[pri:4, instance:main_file.Main_Templates@ea6147e]" name="Make_Default_And_Rename_Template" duration-ms="68666" started-at="2017-03-06T15:27:21Z" finished-at="2017-03-06T15:28:29Z">
+        <test-method status="PASS" signature="Make_Default_And_Rename_Template()[pri:4, instance:main_file.Main_Templates@1a942c18]" name="Make_Default_And_Rename_Template" duration-ms="66975" started-at="2017-04-10T17:24:34Z" finished-at="2017-04-10T17:25:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Make_Default_And_Rename_Template -->
-        <test-method status="PASS" signature="Shortname_Template()[pri:5, instance:main_file.Main_Templates@ea6147e]" name="Shortname_Template" duration-ms="151560" started-at="2017-03-06T15:28:29Z" finished-at="2017-03-06T15:31:01Z">
+        <test-method status="PASS" signature="Shortname_Template()[pri:5, instance:main_file.Main_Templates@1a942c18]" name="Shortname_Template" duration-ms="156870" started-at="2017-04-10T17:25:41Z" finished-at="2017-04-10T17:28:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Shortname_Template -->
-        <test-method status="PASS" signature="View_Report_Section_Structure_And_Define_Rules()[pri:6, instance:main_file.Main_Templates@ea6147e]" name="View_Report_Section_Structure_And_Define_Rules" duration-ms="61480" started-at="2017-03-06T15:31:01Z" finished-at="2017-03-06T15:32:02Z">
+        <test-method status="PASS" signature="View_Report_Section_Structure_And_Define_Rules()[pri:6, instance:main_file.Main_Templates@1a942c18]" name="View_Report_Section_Structure_And_Define_Rules" duration-ms="60873" started-at="2017-04-10T17:28:18Z" finished-at="2017-04-10T17:29:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- View_Report_Section_Structure_And_Define_Rules -->
-        <test-method status="PASS" signature="Define_Dashboard()[pri:7, instance:main_file.Main_Templates@ea6147e]" name="Define_Dashboard" duration-ms="69306" started-at="2017-03-06T15:32:03Z" finished-at="2017-03-06T15:33:12Z">
+        <test-method status="PASS" signature="Define_Dashboard()[pri:7, instance:main_file.Main_Templates@1a942c18]" name="Define_Dashboard" duration-ms="65793" started-at="2017-04-10T17:29:19Z" finished-at="2017-04-10T17:30:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Define_Dashboard -->
-        <test-method status="PASS" signature="Move_Template_ToAnotherCompany_And_Delete_Template()[pri:8, instance:main_file.Main_Templates@ea6147e]" name="Move_Template_ToAnotherCompany_And_Delete_Template" duration-ms="233415" started-at="2017-03-06T15:33:12Z" finished-at="2017-03-06T15:37:05Z">
+        <test-method status="PASS" signature="Move_Template_ToAnotherCompany_And_Delete_Template()[pri:8, instance:main_file.Main_Templates@1a942c18]" name="Move_Template_ToAnotherCompany_And_Delete_Template" duration-ms="278540" started-at="2017-04-10T17:30:25Z" finished-at="2017-04-10T17:35:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Move_Template_ToAnotherCompany_And_Delete_Template -->
-        <test-method status="PASS" signature="LogOut()[pri:9, instance:main_file.Main_Templates@ea6147e]" name="LogOut" duration-ms="16665" started-at="2017-03-06T15:37:05Z" finished-at="2017-03-06T15:37:22Z">
+        <test-method status="PASS" signature="LogOut()[pri:9, instance:main_file.Main_Templates@1a942c18]" name="LogOut" duration-ms="17142" started-at="2017-04-10T17:35:03Z" finished-at="2017-04-10T17:35:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogOut -->

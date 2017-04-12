@@ -489,15 +489,15 @@ public class Add_Supporting_Documentation {
 		}
 	Thread.sleep(3000);
 	
-	Excel_Data excel= new Excel_Data(3, "src\\Test_Data\\Appendices.xlsx");
+	Excel_Data excel= new Excel_Data("src\\Test_Data\\Appendices.xlsx");
 	HighlightElement(driver, Questionnaire_To_Name);
-	Questionnaire_To_Name.sendKeys(excel.Questionnaire_Email_To_Name(1, 0));
+	Questionnaire_To_Name.sendKeys(excel.Questionnaire_Email_To_Name("Send Questionnaire Email", 1, 0));
 	Thread.sleep(3000);
 	HighlightElement(driver, Questionnaire_To_Email);
-	Questionnaire_To_Email.sendKeys(excel.Questionnaire_Email_To_Email(1, 1));
+	Questionnaire_To_Email.sendKeys(excel.Questionnaire_Email_To_Email("Send Questionnaire Email", 1, 1));
 	Thread.sleep(3000);
 	HighlightElement(driver, Questionnaire_Note);
-	Questionnaire_Note.sendKeys(excel.Questionnaire_Email_Message(1, 2));
+	Questionnaire_Note.sendKeys(excel.Questionnaire_Email_Message("Send Questionnaire Email", 1, 2));
 	Scroll_Element(Questionnaire_Send_Email_Button);	
 	Thread.sleep(3000);
 	HighlightElement(driver, Questionnaire_Send_Email_Button);

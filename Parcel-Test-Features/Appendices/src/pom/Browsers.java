@@ -12,16 +12,17 @@ static WebDriver driver;
 		
 		
 		if(browsername.equalsIgnoreCase("chrome")){			
-			System.setProperty("webdriver.chrome.driver", "src\\Browser Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "src\\Test_Data\\Browser_Drivers\\chromedriver.exe");
 			driver= new ChromeDriver();
 		}
 		
 	if(browsername.equalsIgnoreCase("IE")){
-		System.setProperty("webdriver.ie.driver","src\\Browser Drivers\\IEDriverServer.exe");				
+		System.setProperty("webdriver.ie.driver","src\\Test_Data\\Browser_Drivers\\IEDriverServer.exe");				
 		driver = new InternetExplorerDriver();	
 		}
 	
 	if(browsername.equalsIgnoreCase("firefox")){
+		System.setProperty("webdriver.gecko.driver","src\\Test_Data\\Browser_Drivers\\geckodriver.exe");	
 		driver= new FirefoxDriver();
 		}
 		
