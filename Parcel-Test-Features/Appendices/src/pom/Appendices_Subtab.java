@@ -1,12 +1,9 @@
 package pom;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.util.PDFTextStripper;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.JavascriptExecutor;
@@ -179,11 +176,9 @@ public class Appendices_Subtab {
 	
 	public void Search_SiteId(int row, int column) throws IOException, Exception{
 		
-		Excel_Data excel= new Excel_Data(0, "src\\Test_Data\\Appendices.xlsx");
+		Excel_Data excel= new Excel_Data("src\\Test_Data\\Appendices.xlsx");
 		String Excel_SiteId="";
-		for(int e=1; e<=excel.rowcount1; e++){
-			Excel_SiteId=excel.Site_Id(row, column);
-		}	
+		Excel_SiteId=excel.Site_Id("Site ID", row, column);
 		HighlightElement(driver, Search_SiteId);
 		Search_SiteId.clear();
 		Search_SiteId.sendKeys(Excel_SiteId);
@@ -585,47 +580,23 @@ public class Appendices_Subtab {
 					Thread.sleep(10000);	
 					HighlightElement(driver, Assemble_Tab_Check_All);
 					Assemble_Tab_Check_All.click();
-					/*Thread.sleep(5000);
-					HighlightElement(driver, Assemble_Tab_Download_PDF);
-					Assemble_Tab_Download_PDF.click();
-					Thread.sleep(15000);*/
 					Download_PDF_And_Word_File();
 					HighlightElement(driver, Appendices_Tab);
 					Appendices_Tab.click();
 					Thread.sleep(8000);
 					JO.executeScript("arguments[0].scrollIntoView(true);",Other_Uploaded_Files);
 					Thread.sleep(5000);
-					
-				/*	Following try code for to check uploaded pdf is present under downloaded report or not. But this
-					code have limitations in which we need to manually upload pdf first in appendices section and download
-					report, after that report path need to put into appendices excel. Then delete uploaded pdf under appendices
-					section and run the test after that Report will be print on console panel of eclipse.*/
-					
-					try {
-						Excel_Data excel= new Excel_Data(2, "src\\Test_Data\\Appendices.xlsx");
-						String Downloaded_PDF="";
-						for(int e=1; e<=excel.rowcount3; e++){
-							Downloaded_PDF=excel.Open_Downloaded_PDF(1, 0);
-						}
-						
-					PDDocument pd= PDDocument.load(new File(""+Downloaded_PDF+""));
-					System.out.println("Total Pages of PDF: "+pd.getNumberOfPages());
-					PDFTextStripper pdf= new PDFTextStripper();
-					System.out.println("Search included PDF into Photograph Appendix section: \n"+pdf.getText(pd));
-					}catch (Exception e) {
-					
-					}
-					
+	
 					List<WebElement> All_Uploaded_PDF = driver.findElements(By.xpath("//*[@id='appendicesFilesTable"+All_Sections_Id_array.get(0)+"']/tbody/tr/td/a[@class='pdf']"));
 					int Counter=1;
 					for(WebElement PDF:All_Uploaded_PDF){	
-					
-					if(Counter==1){
-						
-					JavascriptExecutor JZ = (JavascriptExecutor) driver;
-					JZ.executeScript("arguments[0].scrollIntoView(true);",PDF);
-					Thread.sleep(5000);
-						
+
+						if (Counter == 1) {
+
+							JavascriptExecutor JZ = (JavascriptExecutor) driver;
+							JZ.executeScript("arguments[0].scrollIntoView(true);", PDF);
+							Thread.sleep(5000);
+
 					WebElement Rename_PDF_File= driver.findElement(By.xpath("//*[@id='appendicesFilesTable"+All_Sections_Id_array.get(0)+"']/tbody/tr[2]/td[5]/a[2]"));		
 					HighlightElement(driver, Rename_PDF_File);
 					Rename_PDF_File.click();
@@ -641,8 +612,6 @@ public class Appendices_Subtab {
 					HighlightElement(driver, Go_Button);
 					Change_PDF_File_Name.click();
 					Go_Button.click();
-
-					
 					Thread.sleep(3000);
 					driver.switchTo().alert().accept();
 					Thread.sleep(3000);
@@ -656,7 +625,6 @@ public class Appendices_Subtab {
 					HighlightElement(driver, Move_Dropdown);
 					Select MoveDropdown = new Select(Move_Dropdown);
 					MoveDropdown.selectByIndex(2);
-					
 					Selected_Dropdown_Option=Move_Dropdown.getAttribute("value");
 					HighlightElement(driver, GoButton);
 					Change_PDFFile_Name.click();

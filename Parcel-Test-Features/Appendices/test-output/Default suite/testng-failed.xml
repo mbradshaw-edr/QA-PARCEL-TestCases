@@ -5,8 +5,8 @@
     <classes>
       <class name="appendices.Main_Appendices">
         <methods>
-          <include name="Send_Questionnaire_Email"/>
-          <include name="Add_User_Questionnaire"/>
+          <include name="Check_PDF_Exclude_Include_Sort_Delete"/>
+          <include name="Check_Upload_PDF"/>
         </methods>
       </class> <!-- appendices.Main_Appendices -->
     </classes>
