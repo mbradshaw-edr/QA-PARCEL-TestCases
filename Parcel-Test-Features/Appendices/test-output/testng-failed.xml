@@ -3,12 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="appendices.Main_Appendices">
+      <class name="test_collection.Main_Appendices">
         <methods>
+          <include name="Add_Communication_Record"/>
+          <include name="Add_FHA_Checklist"/>
+          <include name="Add_ADA_Checklist"/>
           <include name="Check_PDF_Exclude_Include_Sort_Delete"/>
           <include name="Check_Upload_PDF"/>
+          <include name="Add_User_Questionnaire"/>
         </methods>
-      </class> <!-- appendices.Main_Appendices -->
+      </class> <!-- test_collection.Main_Appendices -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
