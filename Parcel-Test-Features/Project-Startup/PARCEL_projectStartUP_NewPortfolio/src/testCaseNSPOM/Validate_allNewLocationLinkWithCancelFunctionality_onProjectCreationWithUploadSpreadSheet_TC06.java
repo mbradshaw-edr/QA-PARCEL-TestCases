@@ -46,6 +46,8 @@ public class Validate_allNewLocationLinkWithCancelFunctionality_onProjectCreatio
 		} 
 	    public void click_addNewLocation() throws InterruptedException
 		{
+	    	System.out.println("\n\n");
+	    	System.out.println("Validating Add new location link functionality with 'Calcel' button");
 			WebElement e=wd.findElement(AddANewLocationLink);
 			HighlightElement(wd, e);
 			Thread.sleep(2000);

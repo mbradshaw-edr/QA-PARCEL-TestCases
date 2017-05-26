@@ -62,7 +62,7 @@ public WebDriver wd;
 			wd=new FirefoxDriver();
 		}
 		wd.get("https://www.parcelplatform.com/");
-		wd.manage().window().maximize();
+		//wd.manage().window().maximize();
 		wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		String s=wd.getTitle();
 		System.out.println(" Open Browser success and page title is :"+s);
@@ -82,7 +82,7 @@ public WebDriver wd;
 		}
 			
 	}
-    /*@Test(priority=1, description="TestCase# 17")
+    @Test(priority=17, description="TestCase# 17")
  	public void testMethod17()
  	{
  		try
@@ -96,7 +96,7 @@ public WebDriver wd;
  		}
  			
  	}
-    @Test(priority=2, description="TestCase# 18")
+    @Test(priority=18, description="TestCase# 18")
  	public void testMethod18()
  	{
  		try
@@ -110,7 +110,7 @@ public WebDriver wd;
  		}
  			
  	}
-    @Test(priority=3, description="TestCase# 19")
+    @Test(priority=19, description="TestCase# 19")
  	public void testMethod19()
  	{
  		try
@@ -124,7 +124,7 @@ public WebDriver wd;
  		}
  			
  	}
-    @Test(priority=4, description="TestCase# 21")
+    @Test(priority=20, description="TestCase# 21")
   	public void testMethod21()
   	{
   		try
@@ -138,7 +138,7 @@ public WebDriver wd;
   		}
   			
   	}
-    @Test(priority=5, description="TestCase# 22")
+    @Test(priority=21, description="TestCase# 22")
   	public void testMethod22()
   	{
   		try
@@ -153,7 +153,7 @@ public WebDriver wd;
   			
   	}
     
-   @Test(priority=6, description="TestCase# 23")
+   @Test(priority=22, description="TestCase# 23")
   	public void testMethod23()
   	{
   		try
@@ -168,7 +168,7 @@ public WebDriver wd;
   			
   	}
     
-    @Test(priority=7, description="TestCase# 26")
+    @Test(priority=23, description="TestCase# 26")
   	public void testMethod26()
   	{
   		try
@@ -181,8 +181,8 @@ public WebDriver wd;
   		    e.printStackTrace(System.out);
   		}
   			
-  	}*/
-    @Test(priority=8, description="TestCase# 27")
+  	}
+    @Test(priority=24, description="TestCase# 27")
   	public void testMethod27()
   	{
   		try
@@ -196,7 +196,7 @@ public WebDriver wd;
   		}
   			
   	}
-    /*@Test(priority=9, description="TestCase# 28")
+    @Test(priority=25, description="TestCase# 28")
   	public void testMethod28()
   	{
   		try
@@ -210,28 +210,28 @@ public WebDriver wd;
   		}
   			
   	}
-    @Test(priority=10, description="TestCase# 29")
+    @Test(priority=26, description="TestCase# 29")
 	public void testMethod29() throws WebDriverException, InterruptedException
 	{
 		
 			Validate_parcelUserCanNotifyOtherUserAboutProjectCreation_EmailNotificationSection_TC29 tc29=new Validate_parcelUserCanNotifyOtherUserAboutProjectCreation_EmailNotificationSection_TC29(wd);
-		tc29.mainMethod("Automation Test Proj019", "07/28/2016", "10/30/2016", "Automation Test prop19", "Wichita Falls11", "Wichita Falls", "Auto136");
+		tc29.mainMethod("Automation Test Proj022", "07/28/2016", "10/30/2016", "Automation Test prop19", "Wichita Falls11", "Wichita Falls", "Auto136");
 		System.out.println("");
 		
 			
 	}
-    @Test(priority=11, description="TestCase# 30")
+    @Test(priority=27, description="TestCase# 30")
  	public void testMethod30() throws WebDriverException, InterruptedException
  	{
  		
  			Validate_findContactFunctionality_forEmailNotificationSection_TC30 tc30=new Validate_findContactFunctionality_forEmailNotificationSection_TC30(wd);
- 		tc30.mainMethod("Automation Test Proj020", "07/28/2016", "10/30/2016", "Automation Test prop17", "Wichita Falls12", "Wichita Falls", "Auto135");
+ 		tc30.mainMethod("Automation Test Proj023", "07/28/2016", "10/30/2016", "Automation Test prop17", "Wichita Falls12", "Wichita Falls", "Auto135");
  		System.out.println("");
  		
  		
  			
  	}
-    @Test(priority=12, description="TestCase# 31")
+    @Test(priority=28, description="TestCase# 31")
  	public void testMethod31()
  	{
  		try
@@ -245,7 +245,7 @@ public WebDriver wd;
  		}
  			
  	}
-    @Test(priority=13, description="TestCase# 32")
+    @Test(priority=29, description="TestCase# 32")
   	public void testMethod32() throws InterruptedException
   	{
   		try
@@ -263,7 +263,7 @@ public WebDriver wd;
 		}
   			
   	}
-    @Test(priority=14, description="TestCase# 33")
+    /*@Test(priority=14, description="TestCase# 33")
   	public void testMethod33()
   	{
   		try
@@ -311,11 +311,11 @@ public WebDriver wd;
   			
   	}*/
     
-    /*@AfterClass
+    @AfterClass
     public void loggout()
     {
  	   wd.quit();
-    }*/
+    }
   
 
  

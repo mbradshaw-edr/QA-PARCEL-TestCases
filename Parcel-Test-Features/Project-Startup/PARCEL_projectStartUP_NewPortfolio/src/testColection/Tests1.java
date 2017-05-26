@@ -65,8 +65,8 @@ public static WebDriver wd;
 			System.setProperty("webdriver.gecko.driver", "..\\PARCEL_projectStartUP_NewPortfolio\\src\\browserDrivers\\geckodriver.exe");
 			wd=new FirefoxDriver();
 		}
-		wd.navigate().to("https://uat.parcelplatform.com/");
-		wd.manage().window().maximize();
+		wd.navigate().to("https://www.parcelplatform.com/");
+		//wd.manage().window().maximize();
 		wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		String s=wd.getTitle();
 		System.out.println(" Open Browser success and page title is :"+s);
@@ -275,6 +275,8 @@ public static WebDriver wd;
     @Test(priority=14, description="TestCase# login")
 	public void testLogin14()
 	{
+    	System.out.println("\n");
+    	System.out.println("again logine for validation of Manual radio button inder the New Portfolio page");
 		try
 		{
 		Login l=new Login(wd);

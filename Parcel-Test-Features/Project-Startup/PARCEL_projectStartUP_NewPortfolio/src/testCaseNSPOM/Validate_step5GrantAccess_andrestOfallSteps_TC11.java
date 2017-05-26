@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Validate_step5GrantAccess_andrestOfallSteps_TC11 {
 	
-	By GrantAccessToDD=By.name("accessType");
+	By GrantAccessToDD=By.name("accessType");                           // Everyone in the test on parcel team
 	By ContinueButtonForGrantAccessStep5=By.name("submitSetAccess");
 	By ContinoueButton=By.name("consultantFee");
 	
@@ -45,6 +45,8 @@ public class Validate_step5GrantAccess_andrestOfallSteps_TC11 {
 	   
 	   public void click_andSelectGrantAccessTo() throws InterruptedException
 		{
+		   System.out.println("\n\n");
+	    	System.out.println("Validating Edit operation, under this feature like: edit link for project name, site name, report name etc..");
 			WebElement e=wd.findElement(GrantAccessToDD);
 			HighlightElement(wd, e);
 			e.click();
@@ -52,7 +54,7 @@ public class Validate_step5GrantAccess_andrestOfallSteps_TC11 {
 			e.click();
 			Select s=new Select(e);
 			HighlightElement(wd, e);
-			s.selectByVisibleText("Everyone in the QA team");
+			s.selectByVisibleText("Everyone in the test on parcel team");
 		}
 	   
 	   public void click_continueButtonForGrantAccess() throws InterruptedException

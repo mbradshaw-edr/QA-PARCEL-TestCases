@@ -87,7 +87,7 @@ public class Validate_finishOrderButton_underTheOrderPlacedOnEdrWebsitePage_TC04
 			HighlightElement(wd, e1);
 			e1.click();
 			
-			Thread.sleep(7000);
+			Thread.sleep(10000);
 			
 			WebElement e2=wd.findElement(Redirected_PageHeader_AfterClickedOn_FinishOrderButton);
 			HighlightElement(wd, e2);
@@ -97,6 +97,7 @@ public class Validate_finishOrderButton_underTheOrderPlacedOnEdrWebsitePage_TC04
 		
 		public void goBackTo_orderPlacedOnEDRwebsite() throws InterruptedException
 		{
+			Thread.sleep(4000);
 			WebElement e1=wd.findElement(ProjectTab);
 			HighlightElement(wd, e1);
 			e1.click();

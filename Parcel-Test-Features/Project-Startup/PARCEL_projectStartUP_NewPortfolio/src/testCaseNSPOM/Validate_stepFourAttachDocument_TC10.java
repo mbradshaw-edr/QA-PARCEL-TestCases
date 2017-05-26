@@ -38,6 +38,8 @@ public class Validate_stepFourAttachDocument_TC10 {
 	   
 	   public void Step1() throws InterruptedException
 		{
+		   System.out.println("\n\n");
+	    	System.out.println("Validating step-4, atteching an attachments and it's deletion");
 			WebElement e=wd.findElement(Step1);
 			String s1=e.getText();
 			HighlightElement(wd, e);

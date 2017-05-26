@@ -32,6 +32,8 @@ public class SelectingRequiredOptionsFromDropdowns_TC08 {
 	   
 	   public void click_andSelectTransactionType() throws InterruptedException
 		{
+		   System.out.println("\n\n");
+	    	System.out.println("Validating the required options selection from the available drop-downs");
 			WebElement e=wd.findElement(TransactionTypeDD);
 			HighlightElement(wd, e);
 			e.click();

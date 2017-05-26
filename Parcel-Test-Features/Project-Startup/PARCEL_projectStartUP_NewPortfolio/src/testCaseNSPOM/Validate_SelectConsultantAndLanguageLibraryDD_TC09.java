@@ -10,8 +10,8 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Validate_SelectConsultantAndLanguageLibraryDD_TC09 {
 	
-	By ConsultantDD=By.xpath("html/body/div/div/div/div/div/div/form/table/tbody/tr/td[4]/select");
-	By LanguageLibrarydDD=By.xpath("html/body/div/div/div/div/div/div/form/table/tbody/tr/td[5]/select");
+	By ConsultantDD=By.xpath("html/body/div/div/div/div/div/div/form/table/tbody/tr/td[4]/select");       // EDR Applications Development Group
+	By LanguageLibrarydDD=By.xpath("html/body/div/div/div/div/div/div/form/table/tbody/tr/td[5]/select"); // Mike Test Appraisal Document Repository
 	By ContinoueButton=By.name("consultantFee");
 	
 	public static WebDriver wd;
@@ -32,13 +32,17 @@ public class Validate_SelectConsultantAndLanguageLibraryDD_TC09 {
 	   
 	   public void click_andSelectConsultant() throws InterruptedException
 		{
+		   System.out.println("\n\n");
+	    	System.out.println("Validating selection of consultant and language library");
+		   Thread.sleep(4000);
 			WebElement e=wd.findElement(ConsultantDD);
 			HighlightElement(wd, e);
 			e.click();
 			Thread.sleep(2000);
 			Select s=new Select(e);
 			HighlightElement(wd, e);
-			s.selectByVisibleText("Environmental Data Resources");
+			s.selectByVisibleText("EDR Applications Development Group");
+			e.click();
 			
 		}
 	   
@@ -49,8 +53,7 @@ public class Validate_SelectConsultantAndLanguageLibraryDD_TC09 {
 			e.click();
 			Thread.sleep(2000);
 			Select s=new Select(e);
-			HighlightElement(wd, e);
-			s.selectByVisibleText("FastTrack - PARCEL Default");
+			s.selectByVisibleText("Mike Test Appraisal Document Repository");
 			
 		}
 	   public void click_continue() throws InterruptedException

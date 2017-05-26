@@ -31,15 +31,15 @@ public static WebDriver wd;
 	@BeforeClass
 	public void beforeTest1()                  // Initialisation of browser
 	{
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the browser");
-		String brows=sc.next();
-		if(brows.equalsIgnoreCase("chrome"))
-		{
+		//Scanner sc=new Scanner(System.in);
+		//System.out.println("Enter the browser");
+		//String brows=sc.next();
+		//if(brows.equalsIgnoreCase("chrome"))
+		//{
 		System.setProperty("webdriver.chrome.driver", "..\\PARCEL_projectStartUp_orderPlacedOnEDRwebsite\\src\\browserDrivers\\chromedriver.exe");
 		wd=new ChromeDriver();
-		}
-		else if(brows.equalsIgnoreCase("ie"))
+		//}
+		/*else if(brows.equalsIgnoreCase("ie"))
 		{
 			System.setProperty("webdriver.ie.driver", "..\\workspace\\PARCEL_projectStartUp_orderPlacedOnEDRwebsite\\src\\browserDrivers\\IEDriverServer.exe");
 			wd=new InternetExplorerDriver();
@@ -49,9 +49,9 @@ public static WebDriver wd;
 		{
 			System.setProperty("webdriver.gecko.driver", "..\\PARCEL_projectStartUp_OrderPlacedOnEDRwebsite\\src\\browserDrivers\\geckodriver.exe");
 			wd=new FirefoxDriver();
-		}
+		}*/
 		wd.get("https://uat.parcelplatform.com");
-		wd.manage().window().maximize();
+		//wd.manage().window().maximize();
 		//wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		String s=wd.getTitle();
 		System.out.println(" Open Browser success and page title is :"+s);

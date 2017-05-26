@@ -1,101 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="22" passed="22">
+<testng-results skipped="0" failed="0" ignored="0" total="22" passed="22">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1445928" started-at="2017-03-01T12:44:17Z" finished-at="2017-03-01T13:08:22Z">
+  <suite name="Default suite" duration-ms="1553648" started-at="2017-05-12T13:48:27Z" finished-at="2017-05-12T14:14:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1445928" started-at="2017-03-01T12:44:17Z" finished-at="2017-03-01T13:08:22Z">
+    <test name="Default test" duration-ms="1553648" started-at="2017-05-12T13:48:27Z" finished-at="2017-05-12T14:14:21Z">
       <class name="testColection.Tests1">
-        <test-method status="PASS" signature="beforeTest1()[pri:0, instance:testColection.Tests1@546a03af]" name="beforeTest1" is-config="true" duration-ms="15390" started-at="2017-03-01T18:14:17Z" finished-at="2017-03-01T18:14:32Z">
+        <test-method status="PASS" signature="beforeTest1()[pri:0, instance:testColection.Tests1@675d3402]" name="beforeTest1" is-config="true" duration-ms="31224" started-at="2017-05-12T19:18:27Z" finished-at="2017-05-12T19:18:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest1 -->
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:testColection.Tests1@546a03af]" name="testLogin" duration-ms="24506" started-at="2017-03-01T18:14:32Z" description="TestCase# login" finished-at="2017-03-01T18:14:56Z">
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:testColection.Tests1@675d3402]" name="testLogin" duration-ms="28575" started-at="2017-05-12T19:18:59Z" description="TestCase# login" finished-at="2017-05-12T19:19:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="testMethod1()[pri:1, instance:testColection.Tests1@546a03af]" name="testMethod1" duration-ms="19586" started-at="2017-03-01T18:14:56Z" description="TestCase# 01" finished-at="2017-03-01T18:15:16Z">
+        <test-method status="PASS" signature="testMethod1()[pri:1, instance:testColection.Tests1@675d3402]" name="testMethod1" duration-ms="17187" started-at="2017-05-12T19:19:27Z" description="TestCase# 01" finished-at="2017-05-12T19:19:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod1 -->
-        <test-method status="PASS" signature="testMethod2()[pri:2, instance:testColection.Tests1@546a03af]" name="testMethod2" duration-ms="21110" started-at="2017-03-01T18:15:16Z" description="TestCase# 02" finished-at="2017-03-01T18:15:37Z">
+        <test-method status="PASS" signature="testMethod2()[pri:2, instance:testColection.Tests1@675d3402]" name="testMethod2" duration-ms="20726" started-at="2017-05-12T19:19:44Z" description="TestCase# 02" finished-at="2017-05-12T19:20:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod2 -->
-        <test-method status="PASS" signature="testMethod4()[pri:4, instance:testColection.Tests1@546a03af]" name="testMethod4" duration-ms="28132" started-at="2017-03-01T18:15:37Z" description="TestCase# 04" finished-at="2017-03-01T18:16:05Z">
+        <test-method status="PASS" signature="testMethod4()[pri:4, instance:testColection.Tests1@675d3402]" name="testMethod4" duration-ms="31513" started-at="2017-05-12T19:20:05Z" description="TestCase# 04" finished-at="2017-05-12T19:20:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod4 -->
-        <test-method status="PASS" signature="testMethod5()[pri:5, instance:testColection.Tests1@546a03af]" name="testMethod5" duration-ms="107489" started-at="2017-03-01T18:16:05Z" description="TestCase# 05" finished-at="2017-03-01T18:17:53Z">
+        <test-method status="PASS" signature="testMethod5()[pri:5, instance:testColection.Tests1@675d3402]" name="testMethod5" duration-ms="103554" started-at="2017-05-12T19:20:37Z" description="TestCase# 05" finished-at="2017-05-12T19:22:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod5 -->
-        <test-method status="PASS" signature="testMethod6()[pri:6, instance:testColection.Tests1@546a03af]" name="testMethod6" duration-ms="64757" started-at="2017-03-01T18:17:53Z" description="TestCase# 06" finished-at="2017-03-01T18:18:58Z">
+        <test-method status="PASS" signature="testMethod6()[pri:6, instance:testColection.Tests1@675d3402]" name="testMethod6" duration-ms="64753" started-at="2017-05-12T19:22:20Z" description="TestCase# 06" finished-at="2017-05-12T19:23:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod6 -->
-        <test-method status="PASS" signature="testMethod7()[pri:7, instance:testColection.Tests1@546a03af]" name="testMethod7" duration-ms="40997" started-at="2017-03-01T18:18:58Z" description="TestCase# 07" finished-at="2017-03-01T18:19:39Z">
+        <test-method status="PASS" signature="testMethod7()[pri:7, instance:testColection.Tests1@675d3402]" name="testMethod7" duration-ms="52406" started-at="2017-05-12T19:23:25Z" description="TestCase# 07" finished-at="2017-05-12T19:24:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod7 -->
-        <test-method status="PASS" signature="testMethod8()[pri:8, instance:testColection.Tests1@546a03af]" name="testMethod8" duration-ms="12421" started-at="2017-03-01T18:19:39Z" description="TestCase# 08" finished-at="2017-03-01T18:19:51Z">
+        <test-method status="PASS" signature="testMethod8()[pri:8, instance:testColection.Tests1@675d3402]" name="testMethod8" duration-ms="12653" started-at="2017-05-12T19:24:17Z" description="TestCase# 08" finished-at="2017-05-12T19:24:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod8 -->
-        <test-method status="PASS" signature="testMethod9()[pri:9, instance:testColection.Tests1@546a03af]" name="testMethod9" duration-ms="21502" started-at="2017-03-01T18:19:51Z" description="TestCase# 09" finished-at="2017-03-01T18:20:12Z">
+        <test-method status="PASS" signature="testMethod9()[pri:9, instance:testColection.Tests1@675d3402]" name="testMethod9" duration-ms="23439" started-at="2017-05-12T19:24:30Z" description="TestCase# 09" finished-at="2017-05-12T19:24:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod9 -->
-        <test-method status="PASS" signature="testMethod10()[pri:10, instance:testColection.Tests1@546a03af]" name="testMethod10" duration-ms="47848" started-at="2017-03-01T18:20:12Z" description="TestCase# 10" finished-at="2017-03-01T18:21:00Z">
+        <test-method status="PASS" signature="testMethod10()[pri:10, instance:testColection.Tests1@675d3402]" name="testMethod10" duration-ms="49099" started-at="2017-05-12T19:24:54Z" description="TestCase# 10" finished-at="2017-05-12T19:25:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod10 -->
-        <test-method status="PASS" signature="testMethod11()[pri:11, instance:testColection.Tests1@546a03af]" name="testMethod11" duration-ms="77511" started-at="2017-03-01T18:21:00Z" description="TestCase# 11" finished-at="2017-03-01T18:22:18Z">
+        <test-method status="PASS" signature="testMethod11()[pri:11, instance:testColection.Tests1@675d3402]" name="testMethod11" duration-ms="102594" started-at="2017-05-12T19:25:43Z" description="TestCase# 11" finished-at="2017-05-12T19:27:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod11 -->
-        <test-method status="PASS" signature="testMethod12()[pri:12, instance:testColection.Tests1@546a03af]" name="testMethod12" duration-ms="33477" started-at="2017-03-01T18:22:18Z" description="TestCase# 12" finished-at="2017-03-01T18:22:51Z">
+        <test-method status="PASS" signature="testMethod12()[pri:12, instance:testColection.Tests1@675d3402]" name="testMethod12" duration-ms="33702" started-at="2017-05-12T19:27:25Z" description="TestCase# 12" finished-at="2017-05-12T19:27:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod12 -->
-        <test-method status="PASS" signature="testMethod13()[pri:13, instance:testColection.Tests1@546a03af]" name="testMethod13" duration-ms="215435" started-at="2017-03-01T18:22:51Z" description="TestCase# 13" finished-at="2017-03-01T18:26:27Z">
+        <test-method status="PASS" signature="testMethod13()[pri:13, instance:testColection.Tests1@675d3402]" name="testMethod13" duration-ms="216051" started-at="2017-05-12T19:27:59Z" description="TestCase# 13" finished-at="2017-05-12T19:31:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod13 -->
-        <test-method status="PASS" signature="testLogin14()[pri:14, instance:testColection.Tests1@546a03af]" name="testLogin14" duration-ms="17011" started-at="2017-03-01T18:26:27Z" description="TestCase# login" finished-at="2017-03-01T18:26:44Z">
+        <test-method status="PASS" signature="testLogin14()[pri:14, instance:testColection.Tests1@675d3402]" name="testLogin14" duration-ms="23532" started-at="2017-05-12T19:31:35Z" description="TestCase# login" finished-at="2017-05-12T19:31:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin14 -->
-        <test-method status="PASS" signature="testMethod15()[pri:15, instance:testColection.Tests1@546a03af]" name="testMethod15" duration-ms="31709" started-at="2017-03-01T18:26:44Z" description="TestCase# 1" finished-at="2017-03-01T18:27:15Z">
+        <test-method status="PASS" signature="testMethod15()[pri:15, instance:testColection.Tests1@675d3402]" name="testMethod15" duration-ms="39396" started-at="2017-05-12T19:31:59Z" description="TestCase# 1" finished-at="2017-05-12T19:32:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod15 -->
-        <test-method status="PASS" signature="testMethod16()[pri:16, instance:testColection.Tests1@546a03af]" name="testMethod16" duration-ms="125419" started-at="2017-03-01T18:27:15Z" description="TestCase# 2" finished-at="2017-03-01T18:29:21Z">
+        <test-method status="PASS" signature="testMethod16()[pri:16, instance:testColection.Tests1@675d3402]" name="testMethod16" duration-ms="124820" started-at="2017-05-12T19:32:38Z" description="TestCase# 2" finished-at="2017-05-12T19:34:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod16 -->
-        <test-method status="PASS" signature="testMethod17()[pri:17, instance:testColection.Tests1@546a03af]" name="testMethod17" duration-ms="137869" started-at="2017-03-01T18:29:21Z" description="TestCase# 03" finished-at="2017-03-01T18:31:39Z">
+        <test-method status="PASS" signature="testMethod17()[pri:17, instance:testColection.Tests1@675d3402]" name="testMethod17" duration-ms="143391" started-at="2017-05-12T19:34:43Z" description="TestCase# 03" finished-at="2017-05-12T19:37:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod17 -->
-        <test-method status="PASS" signature="testMethod18()[pri:18, instance:testColection.Tests1@546a03af]" name="testMethod18" duration-ms="21541" started-at="2017-03-01T18:31:39Z" description="TestCase# 09" finished-at="2017-03-01T18:32:00Z">
+        <test-method status="PASS" signature="testMethod18()[pri:18, instance:testColection.Tests1@675d3402]" name="testMethod18" duration-ms="24347" started-at="2017-05-12T19:37:06Z" description="TestCase# 09" finished-at="2017-05-12T19:37:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod18 -->
-        <test-method status="PASS" signature="testMethod19()[pri:19, instance:testColection.Tests1@546a03af]" name="testMethod19" duration-ms="50842" started-at="2017-03-01T18:32:00Z" description="TestCase# 10" finished-at="2017-03-01T18:32:51Z">
+        <test-method status="PASS" signature="testMethod19()[pri:19, instance:testColection.Tests1@675d3402]" name="testMethod19" duration-ms="49590" started-at="2017-05-12T19:37:30Z" description="TestCase# 10" finished-at="2017-05-12T19:38:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod19 -->
-        <test-method status="PASS" signature="testMethod20()[pri:20, instance:testColection.Tests1@546a03af]" name="testMethod20" duration-ms="77690" started-at="2017-03-01T18:32:51Z" description="TestCase# 11" finished-at="2017-03-01T18:34:09Z">
+        <test-method status="PASS" signature="testMethod20()[pri:20, instance:testColection.Tests1@675d3402]" name="testMethod20" duration-ms="102022" started-at="2017-05-12T19:38:20Z" description="TestCase# 11" finished-at="2017-05-12T19:40:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod20 -->
-        <test-method status="PASS" signature="testMethod21()[pri:21, instance:testColection.Tests1@546a03af]" name="testMethod21" duration-ms="33618" started-at="2017-03-01T18:34:09Z" description="TestCase# 12" finished-at="2017-03-01T18:34:42Z">
+        <test-method status="PASS" signature="testMethod21()[pri:21, instance:testColection.Tests1@675d3402]" name="testMethod21" duration-ms="34384" started-at="2017-05-12T19:40:02Z" description="TestCase# 12" finished-at="2017-05-12T19:40:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod21 -->
-        <test-method status="PASS" signature="testMethod22()[pri:22, instance:testColection.Tests1@546a03af]" name="testMethod22" duration-ms="220008" started-at="2017-03-01T18:34:42Z" description="TestCase# 22" finished-at="2017-03-01T18:38:22Z">
+        <test-method status="PASS" signature="testMethod22()[pri:22, instance:testColection.Tests1@675d3402]" name="testMethod22" duration-ms="224613" started-at="2017-05-12T19:40:36Z" description="TestCase# 22" finished-at="2017-05-12T19:44:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod22 -->

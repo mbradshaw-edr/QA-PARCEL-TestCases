@@ -38,7 +38,7 @@ public class Tests1 {
 public WebDriver wd;          
 	
 	@BeforeClass
-	public void beforeTest1()                  // Initialisation of browser
+	public void beforeTest1() throws InterruptedException                  // Initialisation of browser
 	{
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the browser");
@@ -59,8 +59,8 @@ public WebDriver wd;
 			System.setProperty("webdriver.gecko.driver", "..\\PARCEL_projectStartup_NSS\\src\\browserDrivers\\geckodriver.exe");
 			wd=new FirefoxDriver();
 		}
-		wd.get("https://uat.parcelplatform.com/");
-		wd.manage().window().maximize();
+		wd.get("https://www.parcelplatform.com/");
+		Thread.sleep(5000);
 		wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		String s=wd.getTitle();
 		System.out.println(" Open Browser success and page title is :"+s);
@@ -72,6 +72,7 @@ public WebDriver wd;
 		try
 		{
 		Login l=new Login(wd);
+		
 		l.loginTo("spatil", "Compu@1234");
 		System.out.println("Login");
 		}
@@ -145,7 +146,7 @@ public WebDriver wd;
 		{
 			
 			Verify_availabilityOfAddReportsToProjectTool_TC05 tc5=new Verify_availabilityOfAddReportsToProjectTool_TC05(wd);
-		tc5.mainMethod("Automation Test Project003", "07/28/2016", "10/30/2016", "Automation Test prop01", "Wichita Falls30", "Wichita Falls", "Auto04");
+		tc5.mainMethod("Automation Test Project006", "07/28/2016", "10/30/2016", "Automation Test prop01", "Wichita Falls30", "Wichita Falls", "Auto04");
 		System.out.println("");
 		}
 		catch(WebDriverException e) {
