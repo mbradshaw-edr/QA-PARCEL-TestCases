@@ -64,6 +64,9 @@ public class Validate_ProjectCreatedSuccessfully_linksAvailabilityAndFuctionalit
 		} 
 	   public void check_LinkAvailability() throws InterruptedException
 	   {
+		   System.out.println("\n\n");
+	    	System.out.println("Validating project creation button, after created successfully, also validate few new links appeared");
+	    	
 		    WebElement e=wd.findElement(ProjectcreatedSuccessMessage);
 			HighlightElement(wd, e);
 			String s1=e.getText();
@@ -78,6 +81,8 @@ public class Validate_ProjectCreatedSuccessfully_linksAvailabilityAndFuctionalit
 	   }
 	   public void click_returnToHomePageLink() throws InterruptedException
 		{
+		   System.out.println("return to home page link validation success");
+    	
 			WebElement e=wd.findElement(ReturnToHomePageLink);
 			HighlightElement(wd, e);
 			e.click();
@@ -87,6 +92,7 @@ public class Validate_ProjectCreatedSuccessfully_linksAvailabilityAndFuctionalit
 		}
 	   public void click_setupAnotherPageLink() throws InterruptedException
 		{
+		   System.out.println("Setup another page link validation success");
 			WebElement e=wd.findElement(SetupAnotherPageLink);
 			HighlightElement(wd, e);
 			e.click();
@@ -96,6 +102,7 @@ public class Validate_ProjectCreatedSuccessfully_linksAvailabilityAndFuctionalit
 		}
 	   public void click_grantAccessLink() throws InterruptedException
 		{
+		   System.out.println("Grant Access link validation success");
 			WebElement e=wd.findElement(GrantAccessLink);
 			HighlightElement(wd, e);
 			e.click();
@@ -195,6 +202,7 @@ public class Validate_ProjectCreatedSuccessfully_linksAvailabilityAndFuctionalit
 			}
 	   public void click_viewProjectDashboardLink() throws InterruptedException
 		{
+		   System.out.println("View project dashboard link validation success");
 			WebElement e=wd.findElement(ViewProjectDashboardLink);
 			HighlightElement(wd, e);
 			e.click();
@@ -204,6 +212,7 @@ public class Validate_ProjectCreatedSuccessfully_linksAvailabilityAndFuctionalit
 		}
 	   public void click_exitPARCELLink() throws InterruptedException
 		{
+		   System.out.println("Exit PARCEL link validation success");
 			WebElement e=wd.findElement(ExitPARCELLink);
 			HighlightElement(wd, e);
 			e.click();

@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test verbose="2" name="Default test">
+  <test name="Default test(failed)">
     <classes>
-      <class name="testColection.Tests1"/>
+      <class name="testColection.Tests1">
+        <methods>
+          <include name="testMethod20"/>
+          <include name="testMethod9"/>
+          <include name="testMethod7"/>
+          <include name="testMethod8"/>
+          <include name="testLogin"/>
+          <include name="testMethod5"/>
+          <include name="testMethod6"/>
+          <include name="testMethod4"/>
+          <include name="testMethod1"/>
+          <include name="testMethod18"/>
+          <include name="testMethod19"/>
+          <include name="testMethod2"/>
+          <include name="testMethod16"/>
+          <include name="testMethod13"/>
+          <include name="testLogin14"/>
+          <include name="testMethod10"/>
+          <include name="testMethod21"/>
+          <include name="beforeTest1"/>
+          <include name="testMethod11"/>
+          <include name="testMethod22"/>
+          <include name="testMethod17"/>
+          <include name="testMethod15"/>
+          <include name="testMethod12"/>
+        </methods>
+      </class> <!-- testColection.Tests1 -->
     </classes>
-  </test> <!-- Default test -->
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

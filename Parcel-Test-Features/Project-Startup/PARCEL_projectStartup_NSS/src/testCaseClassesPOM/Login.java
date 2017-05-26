@@ -36,6 +36,7 @@ public class Login {
 	/* Method for setting valid data for user name field */
 	public void setUserName(String un) throws InterruptedException
 	{
+		//wd.manage().window().maximize();
 		WebElement e1=wd.findElement(UserName);
 		e1.sendKeys(un);
 		HighlightElement(wd, e1);

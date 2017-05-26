@@ -23,7 +23,7 @@ public class Validate_propertyInformation_onNewSingleSiteProject_TC18 {
 	By DateFineDueField=By.id("final_date");
 	By PropertyNumber=By.name("prop_number");
 	By PropertyZip=By.id("prop_zip");
-	By Phase1ESA_ParcelOptimizedPhase1Template2013ChechBox=By.xpath("//*[@id='divReports']/table/tbody/tr[9]/td[3]/input");
+	By Phase1ESA_ParcelOptimizedPhase1Template2013ChechBox=By.xpath("//*[contains(@value,'PhaseI.2149')]");
 	By Project_ID=By.xpath("//*[@id='divFeePhaseI.2149']/input[2]");
 	By SubmitButton=By.name("submitExpress");
 	By ToolIcon=By.xpath("html/body/div/div/div/div/div/div/div/div/div[2]/a");

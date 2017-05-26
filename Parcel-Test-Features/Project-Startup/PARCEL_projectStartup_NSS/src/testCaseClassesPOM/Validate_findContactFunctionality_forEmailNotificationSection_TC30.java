@@ -220,7 +220,7 @@ public class Validate_findContactFunctionality_forEmailNotificationSection_TC30 
 		
 		WebElement e6=wd.findElement(SearchTextboxOfFindContactUnderEmailNotification);
 		HighlightElement(wd, e6);
-		e6.sendKeys("Alon");
+		e6.sendKeys("spatil");
 		Thread.sleep(2000);
 		WebElement e7=wd.findElement(SearchButtonUnderEmailNotification);
 		HighlightElement(wd, e7);

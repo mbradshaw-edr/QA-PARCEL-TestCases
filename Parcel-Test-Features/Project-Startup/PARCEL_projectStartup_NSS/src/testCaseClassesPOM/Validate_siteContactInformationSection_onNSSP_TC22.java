@@ -61,6 +61,7 @@ public class Validate_siteContactInformationSection_onNSSP_TC22 {
 		System.out.println("Name of this link is :"+s);
 		System.out.println("Availability :"+b);
 		System.out.println("Clickability :"+b1);
+		Thread.sleep(4000);
 		
 	}
 	

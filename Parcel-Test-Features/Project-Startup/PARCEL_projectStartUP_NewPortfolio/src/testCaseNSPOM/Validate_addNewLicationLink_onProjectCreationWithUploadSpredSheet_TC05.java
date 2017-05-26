@@ -49,6 +49,9 @@ public class Validate_addNewLicationLink_onProjectCreationWithUploadSpredSheet_T
 		
 		public void click_addNewLocation() throws InterruptedException
 		{
+			System.out.println("\n\n");
+	    	System.out.println("Validating Add new location link functionality with 'Coninue' button");
+	    	
 			WebElement e=wd.findElement(AddANewLocationLink);
 			HighlightElement(wd, e);
 			e.click();
@@ -164,6 +167,8 @@ public class Validate_addNewLicationLink_onProjectCreationWithUploadSpredSheet_T
 			Thread.sleep(2000);
 			e17.click();
 			Thread.sleep(1000);
+			
+			System.out.println("All entries have benn filled successfully");
 			
 			
 		}

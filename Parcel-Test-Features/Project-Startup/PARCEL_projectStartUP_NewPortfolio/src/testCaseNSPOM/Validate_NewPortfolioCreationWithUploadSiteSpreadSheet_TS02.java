@@ -40,6 +40,7 @@ public class Validate_NewPortfolioCreationWithUploadSiteSpreadSheet_TS02 {
 		
 		public void click_newPorfolioButton() throws InterruptedException
 		{
+			System.out.println("\n\n");
 			wd.findElement(HomeButton).click();
 			WebElement e=wd.findElement(NewPortfolio);
 			HighlightElement(wd, e);
@@ -48,6 +49,7 @@ public class Validate_NewPortfolioCreationWithUploadSiteSpreadSheet_TS02 {
 		}
 		public void enter_projrctName() throws InterruptedException
 		{
+			System.out.println("Project related field entered successfully");
 			WebElement e=wd.findElement(ProjectNaeField);
 			HighlightElement(wd, e);
 			e.sendKeys(ExcelR1.getData("ProjectNameEntries",1,0));
@@ -56,6 +58,7 @@ public class Validate_NewPortfolioCreationWithUploadSiteSpreadSheet_TS02 {
 		}
 		public void ckick_uploadSiteSpreadSheetRadioButton() throws InterruptedException
 		{
+			System.out.println("selecting or using upload the file option");
 			WebElement e=wd.findElement(UploadSiteSpreadSheetRadioButton);
 			HighlightElement(wd, e);
 			e.click();
@@ -72,13 +75,11 @@ public class Validate_NewPortfolioCreationWithUploadSiteSpreadSheet_TS02 {
 		{
 			WebElement e=wd.findElement(BrowseButton);
 			HighlightElement(wd, e);
-			System.out.println("aaaaa");
 			//e.sendKeys("..\\src\\testData\\Detail_creatNewPortfolio1.xlsx");
 			
 			File file = new File("src\\testData\\Detail_creatNewPortfolio1.xlsx");
 			e.sendKeys(file.getAbsolutePath());
 			
-			System.out.println("bbbb");
 			
 		}
 		public void click_uploadButton() throws InterruptedException
@@ -86,6 +87,7 @@ public class Validate_NewPortfolioCreationWithUploadSiteSpreadSheet_TS02 {
 			WebElement e=wd.findElement(UploadFileButton);
 			HighlightElement(wd, e);
 			e.click();
+			System.out.println("File uploaded successfully");
 		}
 		public void mainMethod() throws InterruptedException
 		{

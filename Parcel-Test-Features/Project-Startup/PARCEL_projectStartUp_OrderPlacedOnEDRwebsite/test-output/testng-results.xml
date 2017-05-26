@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="208942" started-at="2017-03-02T09:51:25Z" finished-at="2017-03-02T09:54:54Z">
+  <suite name="Default suite" duration-ms="261979" started-at="2017-05-02T02:40:46Z" finished-at="2017-05-02T02:45:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="208942" started-at="2017-03-02T09:51:25Z" finished-at="2017-03-02T09:54:54Z">
+    <test name="Default test" duration-ms="261979" started-at="2017-05-02T02:40:46Z" finished-at="2017-05-02T02:45:07Z">
       <class name="testCollection.Tests1">
-        <test-method status="PASS" signature="beforeTest1()[pri:0, instance:testCollection.Tests1@7907ec20]" name="beforeTest1" is-config="true" duration-ms="23061" started-at="2017-03-02T15:21:25Z" finished-at="2017-03-02T15:21:49Z">
+        <test-method status="PASS" signature="beforeTest1()[pri:0, instance:testCollection.Tests1@28feb3fa]" name="beforeTest1" is-config="true" duration-ms="26193" started-at="2017-05-02T08:10:46Z" finished-at="2017-05-02T08:11:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest1 -->
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:testCollection.Tests1@7907ec20]" name="testLogin" duration-ms="28199" started-at="2017-03-02T15:21:49Z" description="TestCase# login" finished-at="2017-03-02T15:22:17Z">
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:testCollection.Tests1@28feb3fa]" name="testLogin" duration-ms="40707" started-at="2017-05-02T08:11:12Z" description="TestCase# login" finished-at="2017-05-02T08:11:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="test1()[pri:1, instance:testCollection.Tests1@7907ec20]" name="test1" duration-ms="16532" started-at="2017-03-02T15:22:17Z" description="TestCase# 1" finished-at="2017-03-02T15:22:33Z">
+        <test-method status="PASS" signature="test1()[pri:1, instance:testCollection.Tests1@28feb3fa]" name="test1" duration-ms="16089" started-at="2017-05-02T08:11:52Z" description="TestCase# 1" finished-at="2017-05-02T08:12:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test2()[pri:2, instance:testCollection.Tests1@7907ec20]" name="test2" duration-ms="24905" started-at="2017-03-02T15:22:33Z" description="TestCase# 2" finished-at="2017-03-02T15:22:58Z">
+        <test-method status="PASS" signature="test2()[pri:2, instance:testCollection.Tests1@28feb3fa]" name="test2" duration-ms="26848" started-at="2017-05-02T08:12:09Z" description="TestCase# 2" finished-at="2017-05-02T08:12:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="test3()[pri:3, instance:testCollection.Tests1@7907ec20]" name="test3" duration-ms="51008" started-at="2017-03-02T15:22:58Z" description="TestCase# 3" finished-at="2017-03-02T15:23:49Z">
+        <test-method status="PASS" signature="test3()[pri:3, instance:testCollection.Tests1@28feb3fa]" name="test3" duration-ms="50618" started-at="2017-05-02T08:12:35Z" description="TestCase# 3" finished-at="2017-05-02T08:13:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="test4()[pri:4, instance:testCollection.Tests1@7907ec20]" name="test4" duration-ms="65207" started-at="2017-03-02T15:23:49Z" description="TestCase# 4" finished-at="2017-03-02T15:24:54Z">
+        <test-method status="PASS" signature="test4()[pri:4, instance:testCollection.Tests1@28feb3fa]" name="test4" duration-ms="101480" started-at="2017-05-02T08:13:26Z" description="TestCase# 4" finished-at="2017-05-02T08:15:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test4 -->

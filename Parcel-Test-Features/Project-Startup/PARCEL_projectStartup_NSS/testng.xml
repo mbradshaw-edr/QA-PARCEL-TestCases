@@ -5,7 +5,7 @@
     <classes>
       <class name="testsExecution.Tests1"/>
       <class name="testsExecution.Tests2"/>
-      <class name="testsExecution.Tests3"/>
+     
     </classes>
   </test> <!-- Default test -->
 </suite> <!-- Default suite -->

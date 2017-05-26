@@ -35,6 +35,8 @@ public class Validate_eMailProjectInfoFunctionality_TC12 {
    
    public void check_FunctinalObjectAvailability() throws InterruptedException
    {
+	   System.out.println("\n\n");
+   	System.out.println("Validating e-mail functionality to the appropriate person related to project information");
 		List<WebElement> l=wd.findElements(FunctionalContentAndInformationOnThisPage);
 		for(WebElement e:l)
 		{

@@ -21,7 +21,7 @@ public class Validate_findContactLink_underClientInformation_TC14 {
 	By AllFieldsUnderclientInformation=By.xpath("//*[@id='divClient']/table/tbody/tr/td[1]");
 	By ClientInformationHide=By.xpath("//*[@id=('divHideClient')]/b/a");
 	
-	By FindContact=By.xpath(".//*[@id='divClient']/table/tbody/tr/td/b/a");
+	By FindContact=By.xpath(".//*[@id='divClient']/table/tbody/tr/td/b/a");   ////*[@id="divClient"]/table/tbody/tr[1]/td[2]/b/a
 	By Link1UnderNewWindow=By.xpath("html/body/table/tbody/tr[4]/td[2]/a");
 	
 	By GeneralXpathForImportContentsOfDataField=By.xpath("html/body/div[2]/div/div/div/div/div/form/div/table/tbody/tr[1]/td[2]/input");
@@ -110,6 +110,7 @@ public class Validate_findContactLink_underClientInformation_TC14 {
 				HighlightElement(wd, e8);
 				String s6=e9.getAttribute("value");
 				System.out.println(" : "+s6);
+				Thread.sleep(4000);
 				
 				
 			}

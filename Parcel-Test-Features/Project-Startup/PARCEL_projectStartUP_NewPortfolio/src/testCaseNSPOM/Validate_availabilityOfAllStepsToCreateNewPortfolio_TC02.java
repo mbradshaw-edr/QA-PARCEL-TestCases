@@ -34,7 +34,8 @@ public class Validate_availabilityOfAllStepsToCreateNewPortfolio_TC02 {
 		
 		public void validatingSeriesOfSteps_fieldsName_FieldsOnNewPortfolioPage() throws InterruptedException
 		{
-			System.out.println("***********  when user clicked on 'New Portfolio' link, anew page opened, in this page a "
+			System.out.println("\n\n");
+			System.out.println("***********  when user clicked on 'New Portfolio' link, a new page opened, in this page a "
 					+ "list od steps are available for user help is visible as follows :- *********");	
 			List<WebElement> l=wd.findElements(AllStepsDiscripription);
 			for(WebElement e:l)

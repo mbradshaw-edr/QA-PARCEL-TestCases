@@ -37,6 +37,8 @@ public class Vailidate_editAndDeleteFunctionality_underProjectCreation_SecondSte
 	   
 	   public void click_editLink() throws InterruptedException
 	 		{
+		       System.out.println("\n\n");
+		       System.out.println("Validating 'Edit' and 'Delete' functionality");
 	 			WebElement e=wd.findElement(EditLink);
 	 			HighlightElement(wd, e);
 	 			e.click();
