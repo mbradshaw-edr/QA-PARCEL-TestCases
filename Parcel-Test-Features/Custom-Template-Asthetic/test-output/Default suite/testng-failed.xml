@@ -7,6 +7,7 @@
         <methods>
           <include name="View_Report_Section_Structure_And_Define_Rules"/>
           <include name="Define_Dashboard"/>
+          <include name="LogOut"/>
           <include name="Edit_And_Save_All_Setup_Options_For_Template"/>
           <include name="Copy_Template_Into_New_Template_With_Different_Name"/>
           <include name="Make_Default_And_Rename_Template"/>

@@ -186,7 +186,7 @@ public class Comments_Tab_Section {
 				WebElement Address1 = driver.findElement(By.xpath("(//div[@data-section-id="
 						+ All_Toc_Sections_Array.get(i - 1) + "]/div/div/input[@value='Address'])[1]"));
 				Address1.click();
-				Thread.sleep(2000);
+				Thread.sleep(3000);
 			} catch (Exception e) {
 
 			}
@@ -194,6 +194,11 @@ public class Comments_Tab_Section {
 					"(//div[@data-section-id=" + All_Toc_Sections_Array.get(i - 1) + "]/div/div/div/div/textarea)[1]"));
 			HighlightElement(driver, Address_Textarea);
 			Address_Textarea.sendKeys("Add Address");
+			Thread.sleep(2000);
+			if (Address_Textarea.getText().isEmpty()) {
+				Address_Textarea.sendKeys("Add Address");
+				Thread.sleep(2000);
+			}
 			WebElement Save_Address = driver.findElement(By.xpath("(//div[@data-section-id="
 					+ All_Toc_Sections_Array.get(i - 1) + "]/div/div/div/div/div/input[@value='Save'])[1]"));
 			HighlightElement(driver, Save_Address);

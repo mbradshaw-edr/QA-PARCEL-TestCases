@@ -86,7 +86,7 @@ public class Library_Tab_Section {
 				}
 			} else {
 				System.out.println(
-						"Language Library not available for first 5 libraries, for time saving we need to skip drag and drop functionality of Language Library.");
+						"Note: Language Library not available for first 5 libraries, for time saving we need to skip drag and drop functionality of Language Library.");
 				break;	
 			}
 			Library_Dropdown_Options_Counter++;

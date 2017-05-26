@@ -1,6 +1,7 @@
 package all_files;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Capabilities;
@@ -175,6 +176,7 @@ public class Assemble_Tab {
 	}
 	
 	private boolean ExistsElement(WebElement Element) {
+		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
 	    try {
 	    	Element.getText();
 	    } catch (Exception e) {
@@ -184,11 +186,11 @@ public class Assemble_Tab {
 	}
 
 	private void Send_Deliverable_Email(String Filetype) throws Exception {
-		Excel_Data excel = new Excel_Data(0, "src\\Test_Data\\Report Delivery Feature.xlsx");
-		Thread.sleep(5000);
+		Excel_Data excel = new Excel_Data("src\\Test_Data\\Report Delivery Feature.xlsx");
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		HighlightElement(driver, Email_Deliverable_To);
 		Email_Deliverable_To.clear();
-		Email_Deliverable_To.sendKeys(excel.Email_Id(1, 3));
+		Email_Deliverable_To.sendKeys(excel.Email_Id("Credentials", 1, 3));
 		JavascriptExecutor JJ = (JavascriptExecutor) driver;
 		JJ.executeScript("arguments[0].scrollIntoView(true);",Email_Deliverable_Submit_Button);
 		Thread.sleep(3000);
@@ -206,7 +208,6 @@ public class Assemble_Tab {
 	}
 
 	private void Download_PDF_And_Word_File() throws Exception{
-		Thread.sleep(3000);
 		if (ExistsElement(Download_PDF)) {
 			HighlightElement(driver, Download_PDF);
 			if (ExistsElement(Download_File_Dropdown)) {
@@ -271,7 +272,7 @@ public class Assemble_Tab {
 
 	private void Previously_Emailed_Reports() throws Exception{
 		driver.navigate().refresh();
-		Thread.sleep(2000);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		HighlightElement(driver, Previously_Emailed_Reports);
 		Previously_Emailed_Reports.click();	
 		Thread.sleep(2000);
@@ -283,11 +284,10 @@ public class Assemble_Tab {
 	
 	private void Previously_Generated_Report() throws Exception{
 	driver.navigate().refresh();
-	Thread.sleep(5000);	
+	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	WebElement Previously_Generated_Report = driver.findElement(By.xpath("(//*[@id='contentpreviouslygeneratedreports-tab']/div/table/tbody/tr/td[2])[1]"));
 	HighlightElement(driver, Previously_Generated_Report);
 	System.out.println("Previously Generated Report name is: "+Previously_Generated_Report.getText());
-	Thread.sleep(3000);	
 	}
 	
 	private void View_Button(String FileName) throws Exception{
@@ -514,15 +514,17 @@ public class Assemble_Tab {
 	}
 	
 	public void Download_Report() throws Exception{
-	Excel_Data excel = new Excel_Data(0, "src\\Test_Data\\Report Delivery Feature.xlsx");
+	Excel_Data excel = new Excel_Data("src\\Test_Data\\Report Delivery Feature.xlsx");
+	
+	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	HighlightElement(driver, Search_SiteId);
 	Search_SiteId.clear();
-	Search_SiteId.sendKeys(excel.Site_Id(1, 2));
+	Search_SiteId.sendKeys(excel.Site_Id("Credentials", 1, 2));
 	Search_SiteId.sendKeys(Keys.ENTER);
-	Thread.sleep(8000);	
+	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	HighlightElement(driver, Assemble_Tab);
 	Assemble_Tab.click();
-	Thread.sleep(5000);
+	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	HighlightElement(driver, Check_all_Option);
 	Check_all_Option.click();
 	Thread.sleep(5000);
@@ -677,10 +679,10 @@ public class Assemble_Tab {
 	}
 	
 	public void LogOut() throws Exception{
-		Thread.sleep(2000);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		HighlightElement(driver, user_dropdown);
 		user_dropdown.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		HighlightElement(driver, logout_button);
 		logout_button.click();
 		Thread.sleep(8000);		
