@@ -3,11 +3,24 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="project_List_Grid_Feature.Main_Grid">
+      <class name="test_collection.Main_Grid">
         <methods>
+          <include name="Check_calendar"/>
+          <include name="Search_Project_Dropdown"/>
+          <include name="Date_Range"/>
+          <include name="check_project"/>
+          <include name="Check_Start_Menus"/>
+          <include name="Check_Company_Logo"/>
+          <include name="Check_status"/>
+          <include name="Check_Grid_Control"/>
+          <include name="Check_Recently_Viewed_Reports"/>
+          <include name="Check_Page_Headers"/>
+          <include name="Check_Support_Help_Button"/>
           <include name="Check_Header_Menus"/>
+          <include name="Check_Other_Menus"/>
+          <include name="search_project"/>
         </methods>
-      </class> <!-- project_List_Grid_Feature.Main_Grid -->
+      </class> <!-- test_collection.Main_Grid -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -332,8 +332,8 @@ public class Toc_Tab_Section {
 
 	@SuppressWarnings("unused")
 	private By Exist_Create_And_Edit_Table_Buttons() {
-		int All_Create_Table_Buttons_counter = 1;
-		int All_Edit_Table_Buttons_counter = 1;
+		int All_Create_Table_Buttons_counter = 0;
+		int All_Edit_Table_Buttons_counter = 0;
 		By Table_Buttons = null;
 
 		for (WebElement ACTB : driver.findElements(All_Create_Table_Buttons)) {

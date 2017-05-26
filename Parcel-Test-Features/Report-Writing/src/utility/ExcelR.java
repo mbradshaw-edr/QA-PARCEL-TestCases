@@ -11,60 +11,59 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelR {
-	
+
 	XSSFWorkbook wb;
 	public static XSSFSheet s;
-		
-	public ExcelR(String excelpath) throws IOException{
+
+	public ExcelR(String excelpath) throws IOException {
 		File src = new File(excelpath);
-	    FileInputStream fis = new FileInputStream(src);
-		wb= new XSSFWorkbook(fis);
+		FileInputStream fis = new FileInputStream(src);
+		wb = new XSSFWorkbook(fis);
 
 	}
-	
+
 	public String getURL(String sheetName, int row, int column) {
-		DataFormatter formatter = new DataFormatter(); 
-		s=wb.getSheet(sheetName);
+		DataFormatter formatter = new DataFormatter();
+		s = wb.getSheet(sheetName);
 		Cell cell = s.getRow(row).getCell(column);
 		String excelURL = formatter.formatCellValue(cell);
-		return excelURL;	
+		return excelURL;
 	}
-	
+
 	public String getBrowserName(String sheetName, int row, int column) {
-		DataFormatter formatter = new DataFormatter(); 
-		s=wb.getSheet(sheetName);
+		DataFormatter formatter = new DataFormatter();
+		s = wb.getSheet(sheetName);
 		Cell cell = s.getRow(row).getCell(column);
 		String excelBrowserName = formatter.formatCellValue(cell);
-		return excelBrowserName;	
+		return excelBrowserName;
 	}
-	
+
 	public String getCredentials(String sheetName, int row, int column) {
-		DataFormatter formatter = new DataFormatter(); 
-		s=wb.getSheet(sheetName);
+		DataFormatter formatter = new DataFormatter();
+		s = wb.getSheet(sheetName);
 		Cell cell = s.getRow(row).getCell(column);
 		String excelcredentials = formatter.formatCellValue(cell);
-		return excelcredentials;	
+		return excelcredentials;
 	}
-	
+
 	public String getSiteId(String sheetName, int row, int column) {
-		DataFormatter formatter = new DataFormatter(); 
-		s=wb.getSheet(sheetName);
+		DataFormatter formatter = new DataFormatter();
+		s = wb.getSheet(sheetName);
 		Cell cell = s.getRow(row).getCell(column);
 		String excelSiteId = formatter.formatCellValue(cell);
-		return excelSiteId;	
+		return excelSiteId;
 	}
-	
+
 	public String getEditor_Text(String sheetName, int row, int column) {
-		DataFormatter formatter = new DataFormatter(); 
-		s=wb.getSheet(sheetName);
+		DataFormatter formatter = new DataFormatter();
+		s = wb.getSheet(sheetName);
 		Cell cell = s.getRow(row).getCell(column);
 		String Editor_Text = formatter.formatCellValue(cell);
-		return Editor_Text;	
+		return Editor_Text;
 	}
-	
 
-	public void writeonexcel(String writeonexcelpath) throws Exception{
-		FileOutputStream fout= new FileOutputStream(writeonexcelpath);
+	public void writeonexcel(String writeonexcelpath) throws Exception {
+		FileOutputStream fout = new FileOutputStream(writeonexcelpath);
 		wb.write(fout);
 	}
 }

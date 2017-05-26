@@ -5,7 +5,7 @@
     <classes>
       <class name="test_collection.Report_Writing_Tests">
         <methods>
-          <include name="Veriable_Replacer"/>
+          <include name="All_Sections_Comments"/>
         </methods>
       </class> <!-- test_collection.Report_Writing_Tests -->
     </classes>
