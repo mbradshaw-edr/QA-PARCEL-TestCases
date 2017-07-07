@@ -104,10 +104,10 @@ public class Assemble_Tab {
 	@FindBy(name="submitCover")
 	WebElement Upload_Cover_Page;
 	
-	@FindBy(xpath="//input[@value='AddCoverPageWFile']")
+	@FindBy(xpath="//input[@value='AddCoverPageWFile' or contains(@alt,'Cover Page')]")
 	WebElement Cover_Page_Checkbox;
 
-	@FindBy(xpath="//input[@value='AddTransmittalWFile']")
+	@FindBy(xpath="//input[@value='AddTransmittalWFile' or contains(@alt,'Transmittal Letter')]")
 	WebElement Transmittal_Letter_Checkbox;
 		
 	@FindBy(xpath="//p[text()='File is a jpg, it needs to be PDF for transmittal upload.']")

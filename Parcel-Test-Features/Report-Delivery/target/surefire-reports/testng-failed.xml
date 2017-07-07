@@ -5,8 +5,10 @@
     <classes>
       <class name="main_file.Main_Report_Delivery">
         <methods>
-          <include name="Download_Report"/>
-          <include name="LogOut"/>
+          <include name="Edit_Cover_Page"/>
+          <include name="Edit_Transmittal_Letter"/>
+          <include name="Upload_Document_Transmittal_Letter"/>
+          <include name="Upload_Document_Cover_Page"/>
         </methods>
       </class> <!-- main_file.Main_Report_Delivery -->
     </classes>
