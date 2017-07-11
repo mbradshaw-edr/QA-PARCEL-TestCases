@@ -5,7 +5,7 @@
     <classes>
       <class name="test_collection.Report_Writing_Tests">
         <methods>
-          <include name="All_Sections_Comments"/>
+          <include name="Drag_Drop_Library"/>
         </methods>
       </class> <!-- test_collection.Report_Writing_Tests -->
     </classes>
