@@ -28,7 +28,7 @@ public class Report_Writing_Tests {
 		Login_page Login_page = new Login_page(driver);
 		Login_page.logintoparcel();
 	}
-
+	
 	@Test(priority = 2, description = "Toc Tab Section")
 	public void All_SectionMode() throws Exception {
 		Toc_Tab_Section Toc_Tab_Section = new Toc_Tab_Section(driver);

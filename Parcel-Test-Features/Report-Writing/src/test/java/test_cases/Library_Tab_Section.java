@@ -87,11 +87,12 @@ public class Library_Tab_Section {
 			} else {
 				System.out.println(
 						"Note: Language Library not available for first 5 libraries, for time saving we need to skip drag and drop functionality of Language Library.");
-				break;	
+				break;
 			}
 			Library_Dropdown_Options_Counter++;
 		}
-		if (!Library.equals("")) {
+
+		try {
 			HighlightElement(driver, Library);
 			Thread.sleep(2000);
 			Actions builder = new Actions(driver);
@@ -115,6 +116,8 @@ public class Library_Tab_Section {
 			builder.release(driver.findElement(Tinymce_Editor)).perform();
 			HighlightElement(driver, driver.findElement(Tinymce_Editor));
 			driver.switchTo().defaultContent();
+		} catch (Exception e) {
+
 		}
 		Thread.sleep(3000);
 	}
