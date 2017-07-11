@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="17" passed="17">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="2584523" started-at="2017-07-10T10:41:37Z" finished-at="2017-07-10T11:24:42Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="2584523" started-at="2017-07-10T10:41:37Z" finished-at="2017-07-10T11:24:42Z">
+      <class name="test_collection.Main_Grid">
+        <test-method status="PASS" signature="login()[pri:1, instance:test_collection.Main_Grid@306f16f3]" name="login" duration-ms="25921" started-at="2017-07-10T16:11:37Z" finished-at="2017-07-10T16:12:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="allreports_list()[pri:2, instance:test_collection.Main_Grid@306f16f3]" name="allreports_list" duration-ms="5613" started-at="2017-07-10T16:12:03Z" finished-at="2017-07-10T16:12:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allreports_list -->
+        <test-method status="PASS" signature="create_project()[pri:3, instance:test_collection.Main_Grid@306f16f3]" name="create_project" duration-ms="46548" started-at="2017-07-10T16:12:09Z" finished-at="2017-07-10T16:12:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_project -->
+        <test-method status="PASS" signature="check_project()[pri:4, instance:test_collection.Main_Grid@306f16f3]" name="check_project" duration-ms="198633" started-at="2017-07-10T16:12:55Z" finished-at="2017-07-10T16:16:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_project -->
+        <test-method status="PASS" signature="search_project()[pri:5, instance:test_collection.Main_Grid@306f16f3]" name="search_project" duration-ms="358761" started-at="2017-07-10T16:16:14Z" finished-at="2017-07-10T16:22:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_project -->
+        <test-method status="PASS" signature="Date_Range()[pri:6, instance:test_collection.Main_Grid@306f16f3]" name="Date_Range" duration-ms="59179" started-at="2017-07-10T16:22:13Z" finished-at="2017-07-10T16:23:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Date_Range -->
+        <test-method status="PASS" signature="Check_calendar()[pri:7, instance:test_collection.Main_Grid@306f16f3]" name="Check_calendar" duration-ms="117359" started-at="2017-07-10T16:23:12Z" finished-at="2017-07-10T16:25:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_calendar -->
+        <test-method status="PASS" signature="Check_status()[pri:8, instance:test_collection.Main_Grid@306f16f3]" name="Check_status" duration-ms="34479" started-at="2017-07-10T16:25:09Z" finished-at="2017-07-10T16:25:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_status -->
+        <test-method status="PASS" signature="Search_Project_Dropdown()[pri:9, instance:test_collection.Main_Grid@306f16f3]" name="Search_Project_Dropdown" duration-ms="86437" started-at="2017-07-10T16:25:44Z" finished-at="2017-07-10T16:27:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_Project_Dropdown -->
+        <test-method status="PASS" signature="Check_Grid_Control()[pri:10, instance:test_collection.Main_Grid@306f16f3]" name="Check_Grid_Control" duration-ms="219693" started-at="2017-07-10T16:27:10Z" finished-at="2017-07-10T16:30:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_Grid_Control -->
+        <test-method status="PASS" signature="Check_Company_Logo()[pri:11, instance:test_collection.Main_Grid@306f16f3]" name="Check_Company_Logo" duration-ms="113483" started-at="2017-07-10T16:30:50Z" finished-at="2017-07-10T16:32:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_Company_Logo -->
+        <test-method status="PASS" signature="Check_Recently_Viewed_Reports()[pri:12, instance:test_collection.Main_Grid@306f16f3]" name="Check_Recently_Viewed_Reports" duration-ms="166236" started-at="2017-07-10T16:32:44Z" finished-at="2017-07-10T16:35:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_Recently_Viewed_Reports -->
+        <test-method status="PASS" signature="Check_Header_Menus()[pri:13, instance:test_collection.Main_Grid@306f16f3]" name="Check_Header_Menus" duration-ms="167137" started-at="2017-07-10T16:35:30Z" finished-at="2017-07-10T16:38:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_Header_Menus -->
+        <test-method status="PASS" signature="Check_Page_Headers()[pri:14, instance:test_collection.Main_Grid@306f16f3]" name="Check_Page_Headers" duration-ms="571136" started-at="2017-07-10T16:38:17Z" finished-at="2017-07-10T16:47:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_Page_Headers -->
+        <test-method status="PASS" signature="Check_Start_Menus()[pri:15, instance:test_collection.Main_Grid@306f16f3]" name="Check_Start_Menus" duration-ms="48421" started-at="2017-07-10T16:47:48Z" finished-at="2017-07-10T16:48:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_Start_Menus -->
+        <test-method status="PASS" signature="Check_Other_Menus()[pri:16, instance:test_collection.Main_Grid@306f16f3]" name="Check_Other_Menus" duration-ms="263060" started-at="2017-07-10T16:48:36Z" finished-at="2017-07-10T16:53:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_Other_Menus -->
+        <test-method status="PASS" signature="Check_Support_Help_Button()[pri:17, instance:test_collection.Main_Grid@306f16f3]" name="Check_Support_Help_Button" duration-ms="102400" started-at="2017-07-10T16:53:00Z" finished-at="2017-07-10T16:54:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_Support_Help_Button -->
+      </class> <!-- test_collection.Main_Grid -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
