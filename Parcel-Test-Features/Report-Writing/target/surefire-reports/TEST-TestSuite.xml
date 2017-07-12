@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="1,598.53" tests="18" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\Parcel Automation\Report_Writing_Feature_Maven"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\Parcel Automation\Report_Writing_Feature_Maven"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\RAHUL_~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="classworlds.conf" value="D:\Parcel Automation\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2679214241061895541.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_131/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_131/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_131/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_131\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Android\android-sdk\platform-tools;C:\Program Files (x86)\Android\android-sdk\tools;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Android\android-sdk\build-tools;C:\Program Files (x86)\Android\android-sdk\build-tools\22.0.1;C:\Program Files\apache-maven-3.5.0\bin;C:\Users\rahul_000\AppData\Roaming\npm;C:\Program Files\Docker Toolbox;D:\Tools\Eclipse Neon-3;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.3"/>
+    <property name="user.home" value="C:\Users\rahul_000"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="rahul_000"/>
+    <property name="java.class.path" value="/D:/Tools/Eclipse Neon-3/plugins/org.eclipse.m2e.maven.runtime_1.7.0.20160603-1931/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_131\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\Parcel Automation\Report_Writing_Feature_Maven\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="startbrowser" classname="test_collection.Report_Writing_Tests" time="10.495"/>
+  <testcase name="Login" classname="test_collection.Report_Writing_Tests" time="20.844"/>
+  <testcase name="All_SectionMode" classname="test_collection.Report_Writing_Tests" time="83.545"/>
+  <testcase name="Edit_Tinymce_Editor" classname="test_collection.Report_Writing_Tests" time="119.209"/>
+  <testcase name="Black_All" classname="test_collection.Report_Writing_Tests" time="158.204"/>
+  <testcase name="Highlight_Veriable" classname="test_collection.Report_Writing_Tests" time="30.039"/>
+  <testcase name="Save_All" classname="test_collection.Report_Writing_Tests" time="378.793"/>
+  <testcase name="Show_Next_Previous_Section" classname="test_collection.Report_Writing_Tests" time="9.482"/>
+  <testcase name="Drag_Drop_Library" classname="test_collection.Report_Writing_Tests" time="18.845">
+    <failure message="invalid selector: Unable to locate an element with the xpath expression (//div[@class=&apos;dll-handle&apos;]/div[contains(@id,&apos;dll-text&apos;)/p)[1] because of the following error:&#10;SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;(//div[@class=&apos;dll-handle&apos;]/div[contains(@id,&apos;dll-text&apos;)/p)[1]&apos; is not a valid XPath expression.&#10;  (Session info: chrome=59.0.3071.115)&#10;  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 30 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;&#10;System info: host: &apos;Compumatrice&apos;, ip: &apos;192.168.99.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\RAHUL_~1\AppData\Local\Temp\scoped_dir1940_7305}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]&#10;Session ID: a201a72cf2fe1cac6d027e5905101e92&#10;*** Element info: {Using=xpath, value=(//div[@class=&apos;dll-handle&apos;]/div[contains(@id,&apos;dll-text&apos;)/p)[1]}" type="org.openqa.selenium.InvalidSelectorException">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression (//div[@class='dll-handle']/div[contains(@id,'dll-text')/p)[1] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//div[@class='dll-handle']/div[contains(@id,'dll-text')/p)[1]' is not a valid XPath expression.
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'Compumatrice', ip: '192.168.99.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\RAHUL_~1\AppData\Local\Temp\scoped_dir1940_7305}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: a201a72cf2fe1cac6d027e5905101e92
+*** Element info: {Using=xpath, value=(//div[@class='dll-handle']/div[contains(@id,'dll-text')/p)[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at test_cases.Library_Tab_Section.Drag_Drop_Library(Library_Tab_Section.java:80)
+	at test_collection.Report_Writing_Tests.Drag_Drop_Library(Report_Writing_Tests.java:71)
+</failure>
+  </testcase>
+  <testcase name="Add_Edit_Comments" classname="test_collection.Report_Writing_Tests" time="128.703"/>
+  <testcase name="Add_Address" classname="test_collection.Report_Writing_Tests" time="28.972"/>
+  <testcase name="All_Sections_Comments" classname="test_collection.Report_Writing_Tests" time="59.22"/>
+  <testcase name="Refresh_OpenAll_CloseAll_SelectAll_Delete_Functionality" classname="test_collection.Report_Writing_Tests" time="71.864"/>
+  <testcase name="Drag_Drop_History" classname="test_collection.Report_Writing_Tests" time="43.788"/>
+  <testcase name="Spellcheck_Replace_Functionality" classname="test_collection.Report_Writing_Tests" time="117.564"/>
+  <testcase name="Find_Replace_Functionality" classname="test_collection.Report_Writing_Tests" time="163.011"/>
+  <testcase name="Veriable_Replacer" classname="test_collection.Report_Writing_Tests" time="94.301"/>
+  <testcase name="Tools_Dropdown" classname="test_collection.Report_Writing_Tests" time="61.651"/>
+</testsuite>

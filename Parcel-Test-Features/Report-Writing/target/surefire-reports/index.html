@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 16 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>D:\Parcel Automation\Report_Writing_Feature_Maven\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">18 methods, 16 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_collection.Report_Writing_Tests" hash-for-method="Add_Edit_Comments">Add_Edit_Comments</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_collection.Report_Writing_Tests" hash-for-method="All_SectionMode">All_SectionMode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_collection.Report_Writing_Tests" hash-for-method="All_Sections_Comments">All_Sections_Comments</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_collection.Report_Writing_Tests" hash-for-method="Black_All">Black_All</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_collection.Report_Writing_Tests" hash-for-method="Drag_Drop_History">Drag_Drop_History</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_collection.Report_Writing_Tests" hash-for-method="Drag_Drop_Library">Drag_Drop_Library</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_collection.Report_Writing_Tests" hash-for-method="Edit_Tinymce_Editor">Edit_Tinymce_Editor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_collection.Report_Writing_Tests" hash-for-method="Find_Replace_Functionality">Find_Replace_Functionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_collection.Report_Writing_Tests" hash-for-method="Login">Login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_collection.Report_Writing_Tests" hash-for-method="Refresh_OpenAll_CloseAll_SelectAll_Delete_Functionality">Refresh_OpenAll_CloseAll_SelectAll_Delete_Functionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_collection.Report_Writing_Tests" hash-for-method="Save_All">Save_All</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_collection.Report_Writing_Tests" hash-for-method="Show_Next_Previous_Section">Show_Next_Previous_Section</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_collection.Report_Writing_Tests" hash-for-method="Spellcheck_Replace_Functionality">Spellcheck_Replace_Functionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_collection.Report_Writing_Tests" hash-for-method="Tools_Dropdown">Tools_Dropdown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_collection.Report_Writing_Tests" hash-for-method="Veriable_Replacer">Veriable_Replacer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_collection.Report_Writing_Tests" hash-for-method="startbrowser">startbrowser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_collection.Report_Writing_Tests" hash-for-method="Add_Address">Add_Address</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_collection.Report_Writing_Tests" hash-for-method="Highlight_Veriable">Highlight_Veriable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test_collection.Report_Writing_Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Add_Edit_Comments">
+                  </a> <!-- Add_Edit_Comments -->
+                  <span class="method-name">Add_Edit_Comments</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at test_cases.Comments_Tab_Section.Add_Edit_Comments(Comments_Tab_Section.java:110)
+	at test_collection.Report_Writing_Tests.Add_Edit_Comments(Report_Writing_Tests.java:77)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Comments Tab Section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="All_SectionMode">
+                  </a> <!-- All_SectionMode -->
+                  <span class="method-name">All_SectionMode</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at test_cases.Toc_Tab_Section.All_SectionMode(Toc_Tab_Section.java:446)
+	at test_collection.Report_Writing_Tests.All_SectionMode(Report_Writing_Tests.java:35)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Toc Tab Section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="All_Sections_Comments">
+                  </a> <!-- All_Sections_Comments -->
+                  <span class="method-name">All_Sections_Comments</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at test_cases.Comments_Tab_Section.Select_Comments_Dropdown_Option(Comments_Tab_Section.java:78)
+	at test_cases.Comments_Tab_Section.All_Sections_Comments(Comments_Tab_Section.java:211)
+	at test_collection.Report_Writing_Tests.All_Sections_Comments(Report_Writing_Tests.java:89)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Comments Tab Section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Black_All">
+                  </a> <!-- Black_All -->
+                  <span class="method-name">Black_All</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at test_cases.Toc_Tab_Section.Colour_Toc_Sections(Toc_Tab_Section.java:211)
+	at test_cases.Toc_Tab_Section.Black_All(Toc_Tab_Section.java:481)
+	at test_collection.Report_Writing_Tests.Black_All(Report_Writing_Tests.java:47)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Toc Tab Section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Drag_Drop_History">
+                  </a> <!-- Drag_Drop_History -->
+                  <span class="method-name">Drag_Drop_History</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at test_cases.History_Tab_Section.Drag_Drop_History(History_Tab_Section.java:51)
+	at test_collection.Report_Writing_Tests.Drag_Drop_History(Report_Writing_Tests.java:101)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(History Tab Section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Drag_Drop_Library">
+                  </a> <!-- Drag_Drop_Library -->
+                  <span class="method-name">Drag_Drop_Library</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at test_cases.Library_Tab_Section.Drag_Drop_Library(Library_Tab_Section.java:49)
+	at test_collection.Report_Writing_Tests.Drag_Drop_Library(Report_Writing_Tests.java:71)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Library Tab Section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Edit_Tinymce_Editor">
+                  </a> <!-- Edit_Tinymce_Editor -->
+                  <span class="method-name">Edit_Tinymce_Editor</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at test_cases.Toc_Tab_Section.All_Toc_Sections(Toc_Tab_Section.java:71)
+	at test_cases.Toc_Tab_Section.Edit_Tinymce_Editor(Toc_Tab_Section.java:477)
+	at test_collection.Report_Writing_Tests.Edit_Tinymce_Editor(Report_Writing_Tests.java:41)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Toc Tab Section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Find_Replace_Functionality">
+                  </a> <!-- Find_Replace_Functionality -->
+                  <span class="method-name">Find_Replace_Functionality</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at test_cases.Find_Replace_Tab_Section.Find_Replace_Functionality(Find_Replace_Tab_Section.java:84)
+	at test_collection.Report_Writing_Tests.Find_Replace_Functionality(Report_Writing_Tests.java:113)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Find/Replace Tab Section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login">
+                  </a> <!-- Login -->
+                  <span class="method-name">Login</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at test_cases.Login_page.logintoparcel(Login_page.java:36)
+	at test_collection.Report_Writing_Tests.Login(Report_Writing_Tests.java:29)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Refresh_OpenAll_CloseAll_SelectAll_Delete_Functionality">
+                  </a> <!-- Refresh_OpenAll_CloseAll_SelectAll_Delete_Functionality -->
+                  <span class="method-name">Refresh_OpenAll_CloseAll_SelectAll_Delete_Functionality</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at test_cases.Comments_Tab_Section.Select_Comments_Dropdown_Option(Comments_Tab_Section.java:78)
+	at test_cases.Comments_Tab_Section.Refresh_OpenAll_CloseAll_SelectAll_Delete_Functionality(Comments_Tab_Section.java:222)
+	at test_collection.Report_Writing_Tests.Refresh_OpenAll_CloseAll_SelectAll_Delete_Functionality(Report_Writing_Tests.java:95)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Comments Tab Section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Save_All">
+                  </a> <!-- Save_All -->
+                  <span class="method-name">Save_All</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at test_cases.Toc_Tab_Section.Save_All(Toc_Tab_Section.java:578)
+	at test_collection.Report_Writing_Tests.Save_All(Report_Writing_Tests.java:59)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Toc Tab Section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Show_Next_Previous_Section">
+                  </a> <!-- Show_Next_Previous_Section -->
+                  <span class="method-name">Show_Next_Previous_Section</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at test_cases.Toc_Tab_Section.Show_Next_Previous_Section(Toc_Tab_Section.java:603)
+	at test_collection.Report_Writing_Tests.Show_Next_Previous_Section(Report_Writing_Tests.java:65)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Toc Tab Section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Spellcheck_Replace_Functionality">
+                  </a> <!-- Spellcheck_Replace_Functionality -->
+                  <span class="method-name">Spellcheck_Replace_Functionality</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at test_cases.Spellcheck_Tab_Section.Spellcheck_Replace_Functionality(Spellcheck_Tab_Section.java:78)
+	at test_collection.Report_Writing_Tests.Spellcheck_Replace_Functionality(Report_Writing_Tests.java:107)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Spellcheck Tab Section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tools_Dropdown">
+                  </a> <!-- Tools_Dropdown -->
+                  <span class="method-name">Tools_Dropdown</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at test_cases.Tools.Select_Tools_dropdown_Option(Tools.java:62)
+	at test_cases.Tools.Tools_Dropdown(Tools.java:201)
+	at test_collection.Report_Writing_Tests.Tools_Dropdown(Report_Writing_Tests.java:125)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Tools Dropdown)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Veriable_Replacer">
+                  </a> <!-- Veriable_Replacer -->
+                  <span class="method-name">Veriable_Replacer</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at test_cases.Tools.Variable_Replacer(Tools.java:131)
+	at test_collection.Report_Writing_Tests.Veriable_Replacer(Report_Writing_Tests.java:119)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Tools Dropdown)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="startbrowser">
+                  </a> <!-- startbrowser -->
+                  <span class="method-name">startbrowser</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Compumatrice&apos;, ip: &apos;192.168.99.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\RAHUL_~1\AppData\Local\Temp\scoped_dir8516_27645}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 2a3d3f2050cea2aceb6e5e940e419380
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:320)
+	at test_cases.Browsers.startbrowser(Browsers.java:33)
+	at test_collection.Report_Writing_Tests.startbrowser(Report_Writing_Tests.java:23)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test_collection.Report_Writing_Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Add_Address">
+                  </a> <!-- Add_Address -->
+                  <span class="method-name">Add_Address</span>
+                  <em>
+(Comments Tab Section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Highlight_Veriable">
+                  </a> <!-- Highlight_Veriable -->
+                  <span class="method-name">Highlight_Veriable</span>
+                  <em>
+(Toc Tab Section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Parcel Automation\Report_Writing_Feature_Maven\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
+  &lt;test name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test_collection.Report_Writing_Tests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(18);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'startbrowser')
+data.setCell(0, 2, 'test_collection.Report_Writing_Tests')
+data.setCell(0, 3, 6954);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Edit_Tinymce_Editor')
+data.setCell(1, 2, 'test_collection.Report_Writing_Tests')
+data.setCell(1, 3, 3043);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Login')
+data.setCell(2, 2, 'test_collection.Report_Writing_Tests')
+data.setCell(2, 3, 59);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'All_SectionMode')
+data.setCell(3, 2, 'test_collection.Report_Writing_Tests')
+data.setCell(3, 3, 42);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Drag_Drop_History')
+data.setCell(4, 2, 'test_collection.Report_Writing_Tests')
+data.setCell(4, 3, 35);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Spellcheck_Replace_Functionality')
+data.setCell(5, 2, 'test_collection.Report_Writing_Tests')
+data.setCell(5, 3, 5);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Add_Edit_Comments')
+data.setCell(6, 2, 'test_collection.Report_Writing_Tests')
+data.setCell(6, 3, 5);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Drag_Drop_Library')
+data.setCell(7, 2, 'test_collection.Report_Writing_Tests')
+data.setCell(7, 3, 3);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'All_Sections_Comments')
+data.setCell(8, 2, 'test_collection.Report_Writing_Tests')
+data.setCell(8, 3, 3);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'Veriable_Replacer')
+data.setCell(9, 2, 'test_collection.Report_Writing_Tests')
+data.setCell(9, 3, 3);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'Add_Address')
+data.setCell(10, 2, 'test_collection.Report_Writing_Tests')
+data.setCell(10, 3, 2);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'Find_Replace_Functionality')
+data.setCell(11, 2, 'test_collection.Report_Writing_Tests')
+data.setCell(11, 3, 2);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'Highlight_Veriable')
+data.setCell(12, 2, 'test_collection.Report_Writing_Tests')
+data.setCell(12, 3, 1);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'Save_All')
+data.setCell(13, 2, 'test_collection.Report_Writing_Tests')
+data.setCell(13, 3, 1);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'Show_Next_Previous_Section')
+data.setCell(14, 2, 'test_collection.Report_Writing_Tests')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'Refresh_OpenAll_CloseAll_SelectAll_Delete_Functionality')
+data.setCell(15, 2, 'test_collection.Report_Writing_Tests')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'Black_All')
+data.setCell(16, 2, 'test_collection.Report_Writing_Tests')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'Tools_Dropdown')
+data.setCell(17, 2, 'test_collection.Report_Writing_Tests')
+data.setCell(17, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_collection.Report_Writing_Tests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">startbrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Login</span>
+                <span class="method-start">6970 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">All_SectionMode</span>
+                <span class="method-start">7030 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Edit_Tinymce_Editor</span>
+                <span class="method-start">7074 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Black_All</span>
+                <span class="method-start">10119 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Highlight_Veriable</span>
+                <span class="method-start">10121 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Save_All</span>
+                <span class="method-start">10123 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Show_Next_Previous_Section</span>
+                <span class="method-start">10125 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Drag_Drop_Library</span>
+                <span class="method-start">10128 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Add_Edit_Comments</span>
+                <span class="method-start">10132 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Add_Address</span>
+                <span class="method-start">10138 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">All_Sections_Comments</span>
+                <span class="method-start">10142 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Refresh_OpenAll_CloseAll_SelectAll_Delete_Functionality</span>
+                <span class="method-start">10147 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Drag_Drop_History</span>
+                <span class="method-start">10150 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Spellcheck_Replace_Functionality</span>
+                <span class="method-start">10186 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Find_Replace_Functionality</span>
+                <span class="method-start">10193 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Veriable_Replacer</span>
+                <span class="method-start">10196 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Tools_Dropdown</span>
+                <span class="method-start">10200 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

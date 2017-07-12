@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="test_collection.Report_Writing_Tests">
+        <methods>
+          <include name="All_Sections_Comments"/>
+          <include name="Black_All"/>
+          <include name="Login"/>
+          <include name="Spellcheck_Replace_Functionality"/>
+          <include name="Save_All"/>
+          <include name="Add_Edit_Comments"/>
+          <include name="Edit_Tinymce_Editor"/>
+          <include name="Refresh_OpenAll_CloseAll_SelectAll_Delete_Functionality"/>
+          <include name="All_SectionMode"/>
+          <include name="Find_Replace_Functionality"/>
+          <include name="Veriable_Replacer"/>
+          <include name="Drag_Drop_Library"/>
+          <include name="startbrowser"/>
+          <include name="Show_Next_Previous_Section"/>
+          <include name="Drag_Drop_History"/>
+          <include name="Tools_Dropdown"/>
+        </methods>
+      </class> <!-- test_collection.Report_Writing_Tests -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
