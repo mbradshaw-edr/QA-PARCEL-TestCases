@@ -19,6 +19,14 @@ public class Excel_Data {
 		FileInputStream fis = new FileInputStream(src);
 		wb = new XSSFWorkbook(fis);
 	}
+	
+	public String url(String sheetName, int row, int column) {
+		DataFormatter formatter = new DataFormatter();
+		s = wb.getSheet(sheetName);
+		Cell cell = s.getRow(row).getCell(column);
+		String excelurl = formatter.formatCellValue(cell);
+		return excelurl;
+	}
 
 	public String Username(String sheetName, int row, int column) {
 		DataFormatter formatter = new DataFormatter();

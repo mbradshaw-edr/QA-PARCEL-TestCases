@@ -38,7 +38,8 @@ public class Login_page {
 		Excel_Data excel = new Excel_Data("src\\test\\java\\Test_Data\\Templates_Feature.xlsx");
 		String Username = excel.Username("Credentials", 1, 0);
 		String Password = excel.Password("Credentials", 1, 1);
-
+		String URL = excel.url("URL", 1, 0);
+		driver.get(URL);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		HighlightElement(driver, username);
 		username.sendKeys(Username);

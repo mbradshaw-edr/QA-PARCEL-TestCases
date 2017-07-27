@@ -1,18 +1,9 @@
-<!-- <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>Templates_Feature_Maven</groupId>
-  <artifactId>Templates_Feature_Maven</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-</project> -->
-
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>Templates_Feature_Maven</groupId>
 	<artifactId>Templates_Feature_Maven</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
-
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
@@ -29,7 +20,6 @@
 			<artifactId>poi-excelant</artifactId>
 			<version>3.11</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml-schemas</artifactId>
@@ -65,19 +55,16 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
- 		
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>2.53.0</version>
 		</dependency>
-  <!-- 
-        <dependency>
+		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>2.25.0</version>
-		</dependency>	
-  -->
+		</dependency>
 		<dependency>
 			<groupId>org.apache.james</groupId>
 			<artifactId>apache-mime4j</artifactId>
@@ -163,26 +150,21 @@
 			<artifactId>phantomjsdriver</artifactId>
 			<version>1.2.1</version>
 		</dependency>
- 	
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-firefox-driver</artifactId>
 			<version>2.53.0</version>
 		</dependency>
-		
-
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-chrome-driver</artifactId>
 			<version>2.53.0</version>
 		</dependency>
- 		
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-remote-driver</artifactId>
 			<version>2.53.0</version>
 		</dependency>
- 
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
@@ -190,12 +172,12 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<!-- <sourceDirectory>src</sourceDirectory> -->
+		<sourceDirectory>src</sourceDirectory>
 		<plugins>
 			<plugin>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.14.1</version>
-				 <executions>
+				<executions>
 					<execution>
 						<id>default-test</id>
 						<phase>test</phase>
@@ -208,7 +190,7 @@
 							</suiteXmlFiles>
 						</configuration>
 					</execution>
-				</executions> 
+				</executions>
 				<configuration>
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
@@ -225,6 +207,5 @@
 			</plugin>
 		</plugins>
 	</build>
-		
+</project>
 
-</project>   

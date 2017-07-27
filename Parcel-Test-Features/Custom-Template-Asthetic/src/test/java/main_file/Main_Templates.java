@@ -10,7 +10,7 @@ import all_files.Templates_Page;
 
 public class Main_Templates {
 
-	WebDriver driver = Browsers.startbrowser("chrome", "https://www.parcelplatform.com/reporting/login.php");
+	WebDriver driver = Browsers.startbrowser("chrome");
 
 	Login_page Login_page = PageFactory.initElements(driver, Login_page.class);
 	Templates_Page Templates_Page = PageFactory.initElements(driver, Templates_Page.class);
