@@ -8,9 +8,8 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 public class Browsers {
 static WebDriver driver;
 	
-	public static WebDriver startbrowser(String browsername, String url){
-		
-		
+	public static WebDriver startbrowser(String browsername){
+				
 		if(browsername.equalsIgnoreCase("chrome")){			
 			System.setProperty("webdriver.chrome.driver", "src\\test\\java\\Test_Data\\Browser_Drivers\\chromedriver.exe");
 			driver= new ChromeDriver();
@@ -27,7 +26,6 @@ static WebDriver driver;
 		}
 		
 	driver.manage().window().maximize();
-	driver.get(url);
 	return driver;	
 	}
 
